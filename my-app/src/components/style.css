@@ -248,13 +248,8 @@ text-decoration: underline;
 }
 
 .menuProfile{
-    width: 325px;
-        height: 100px;
-        /* top: 29px;
-        left: 25px; */
-        gap: 0px;
-        /* border: 1px 0px 0px 0px; */
-        opacity: 0px;
+                width: 24vw;
+                height: 16vh;
         border-bottom: 1px solid #EEEEEE;
         margin: auto;
         /* margin: 25px 19px; */
@@ -264,22 +259,14 @@ text-decoration: underline;
 }
 
 .menuAvatar{
-width: 55px;
-    height: 55px;
-    /* top: 29px;
-    left: 25px; */
-    gap: 0px;
-    opacity: 0px;
+width: 4.1vw;
+height: 9vh;    
     /* border: 1px solid goldenrod; */
 }
 
 .menuAvatarImage{
-    width: 45px;
-        height: 45px;
-        /* top: 34px;
-        left: 30px; */
-        gap: 0px;
-        opacity: 0px;
+    width: 3.3vw;
+        height: 6.9vh;
         margin: auto;
         background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\menuImageAvatar.png");
         background-size: cover;
@@ -287,8 +274,8 @@ width: 55px;
 }
 
 .menuAvatarImageBorder{
-    width: 52px;
-        height: 52px;
+    width: 3.85vw;
+    height: 8vh;
     border: 2px solid #28CD56;
         border-radius: 50%;
         display: flex;
@@ -296,17 +283,18 @@ width: 55px;
         justify-content: center;
 }
 
-.menuName{
+/* .menuName{
     margin-top: -30px;
     width: 150px;
+    width: ;
         height: 24px;
-        /* top: 35px;
-        left: 98px; */
         gap: 0px;
         opacity: 0px;
-}
+        border: 1px solid black;
+} */
 
 .menuName > h1{
+        /* border: 1px solid black; */
     margin-left: 20px;
 font-size: 16px;
 font-weight: 500;
@@ -315,6 +303,7 @@ text-align: left;
 }
 
 .menuName > p{
+    /* border: 1px solid black; */
     margin-left: 20px;
     font-size: 12px;
 font-weight: 400;
@@ -325,20 +314,15 @@ margin-top: -12px;
 }
 
 .menubutton{
-    width: 32px;
-        height: 32px;
-        /* top: 39px;
-        left: 314px; */
-        gap: 0px;
-        border: 1px 0px 0px 0px;
-        opacity: 0px;
-        /* border: 1px solid yellow; */
-        margin-left: 80px;
+    width: 2.4vw;
+        height: 5vh;
+    /* border: 1px solid yellow; */
+        margin-left: 120px;
 }
 
 .menubuttonBorder{
-width: 31px;
-    height: 31px;
+width: 2.3vw;
+    height: 4.8vh;
     border: 1px solid #EEEEEE;
     border-radius: 50%;
     display: flex;
@@ -348,13 +332,8 @@ width: 31px;
 }
 
 .menuStats{
-    width: 326px;
-        height: 82px;
-        /* top: 122px;
-        left: 25px;
-        gap: 0px; */
-        border: 1px 0px 0px 0px;
-        opacity: 0px;
+        width: 24vw;
+            height: 12.5vh;
         /* border: 1px solid black; */
         margin: 25px 22px;
             display: flex;
@@ -362,21 +341,22 @@ width: 31px;
 } 
 
 .menuStatsPost{
-    width: 90px;
-        height: 82px;
+    width: 6.5vw;
+        height: 12.5vh;
         /* border: 1px solid green; */
         margin: 0 8px;
 
 }
 .menuStatsPostBorder{
-width: 88px;
-    height: 80px;
+width: 6.4vw;
+    height: 12.4vh;
     border-radius: 5%;
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap;  */
         border: 1px solid #EEEEEE;
+        
 }
 
 .menuStatsPostBorder > h1 {

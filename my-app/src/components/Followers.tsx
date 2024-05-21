@@ -7,6 +7,8 @@ const Followers = () => {
             <span>button</span>
             Followers(4K)
         </div>
+
+{/* <div>
         <div>
             <span>Image</span>
             <span>
@@ -83,6 +85,8 @@ const Followers = () => {
                 <button>following</button>
             </span>
         </div>
+
+        </div> */}
 
 
 

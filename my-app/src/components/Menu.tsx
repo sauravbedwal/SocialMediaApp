@@ -1,4 +1,5 @@
 import React from 'react'
+import "./style.css"
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import {Link} from "react-router-dom";
 
@@ -31,7 +32,7 @@ const Menu = () => {
                  </div>
             </div>
             
-            <Link to="/followers">
+            <Link to="/followers" style={{textDecoration: "none"}}>
             <div className="menuStatsPost">
                  <div className='menuStatsPostBorder'>
                 <h3>6.3k</h3>
@@ -66,7 +67,7 @@ const Menu = () => {
             </div>
             </div>
 
-              <Link to="/followers">
+              <Link to="/followers" style={{textDecoration: "none"}}>
             <div className='menuOptions'>
             <div className='menuOptionLeft'>
                 <span>Friends</span>
