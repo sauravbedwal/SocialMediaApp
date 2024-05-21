@@ -1,0 +1,293 @@
+
+.container {
+    /* background-color: #FFFFFF; */
+        background-color: #bd5959;
+    /* width: 40%; */
+    margin: auto;
+    width: 375px;
+        height: 812px;
+    
+}
+
+.background{
+    height: 432.84px;
+    width: 375px;
+    background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\onboardImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .image-border{
+width: 388.29px;
+    height: 460.86px;
+    top: -21.36px;
+    left: -11.64px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+} */
+
+.onboarding-heading{
+    width: 317px;
+    height: 112px;
+    margin: auto;
+    /* top: 469px; */
+    /* left: 29px; */
+    gap: 0px;
+    opacity: 0px;
+}
+
+.onboarding-heading > h1 {
+    /* font-family: Poppins; */
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 56px;
+        text-align: center;
+}
+
+.onboarding-paragraph {
+    width: 291px;
+        height: 48px;
+        top: 591px;
+        left: 42px;
+        gap: 0px;
+        opacity: 0px;
+        margin: auto;
+}
+
+.onboarding-paragraph > p {
+    /* font-family: Poppins; */
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #919191;
+}
+
+/* .slider{
+    margin: auto;
+    width: 8px;
+        height: 5px;
+        top: 677px;
+        left: 203px;
+        gap: 0px;
+        opacity: 0.25px;
+        color:#020101;
+} */
+
+.btn {
+    width: 325px;
+    height: 58px;
+    top: 716px;
+    left: 25px;
+    gap: 0px;
+    opacity: 0px;
+    border: 0;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 2px;
+    margin: 5px 0px;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.Button-back{
+    width: 45px;
+    height: 45px;
+    /* top: 26px;
+    left: 25px; */
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 4px 14px 0px #28CD5630;
+    padding: 4px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-icon{
+    width: 40px;
+height: 20px;
+/* top: 45px;
+left: 39px; */
+gap: 0px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+color: #FFFFFF;
+}
+
+.signInHeading {   
+    width: 246px;
+    height: 60px;
+    top: 108px;
+    left: 65px;
+    gap: 0px;
+    opacity: 0px;
+    margin: auto;
+}
+
+.signInHeading > h1 {
+    /* margin-top: 80px; */
+            font-size: 40px;
+            font-weight: bold;
+        line-height: 60px;
+        text-align: center;
+}
+
+.signInHeading > p {
+    margin-top: -25px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+    color: #4A4A4A;
+}
+
+.signInForm {
+    margin: 60px 0;
+    width: 325.34px;
+        height: 193px;
+        /* top: 230px;
+        left: 24.66px; */
+        gap: 0px;
+        opacity: 0px;
+        margin-left: 18px;
+}
+
+.signInInput1 {
+width: 325px;
+height: 69px;
+/* top: 230px;
+left: 25px; */
+gap: 0px;
+opacity: 0px;
+border: 1px solid #4DD969;
+border-radius: 8px;
+padding-left: 10px;
+margin: 10px 0;
+}
+
+.signInInput2{
+    margin-top: 10px;
+    width: 325px;
+height: 69px;
+/* top: 317px;
+left: 25px;
+gap: 0px;
+border: 1px 0px 0px 0px; */
+border-radius: 8px;
+opacity: 0px;
+padding-left: 10px;
+    border: 1px solid #EEEEEE;
+}
+
+.signInForm > h5 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;   
+      color: #37d25e;
+    text-decoration: underline;
+}
+
+
+.p-signIn {
+    color: #DDDDDD;
+}
+
+.para-signIn {
+    display: inline;
+    color: #818181;
+    font-weight: 500;
+    font-size: small;
+}
+.secondary-btn{
+    margin: 15px 0;
+}
+
+.white-btn{
+    color: #231D25;
+        display: flex;
+            justify-content:center;
+            align-items: center;
+        background-color: white;
+            width: 325px;
+            height: 58px;
+            /* top: 716px;
+            left: 25px;
+            gap: 0px; */
+            opacity: 0px;
+            border: 0;
+            border-radius: 5px;
+            color: black;
+            padding: 2px;
+            margin: auto;
+            border: 1px solid #EEEEEE;
+}
+
+.p-signUp {
+    color: #818181;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.p-signUp > a {
+color: #37d25e;
+font-size: 15px;
+font-weight: 500;
+text-decoration: underline;
+}
+
+.menuProfile{
+    width: 325px;
+        height: 55px;
+        top: 29px;
+        left: 25px;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        border: 1px solid #EEEEEE;
+        margin: auto;
+}
+
+.menuAvatar{
+width: 55px;
+    height: 55px;
+    /* top: 29px;
+    left: 25px; */
+    gap: 0px;
+    opacity: 0px;
+    border: 1px solid goldenrod;
+}
+
+.menuAvatarImage{
+    width: 45px;
+        height: 45px;
+        /* top: 34px;
+        left: 30px; */
+        gap: 0px;
+        opacity: 0px;
+        margin: auto;
+        background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\menuImageAvatar.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.menuAvatarImageBorder{
+    width: 52px;
+        height: 52px;
+    border: 2px solid #28CD56;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
