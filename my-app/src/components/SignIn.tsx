@@ -33,10 +33,10 @@ const SignIn = () => {
            <p className="p-signIn">---------------------- <p className='para-signIn'> Or with </p> ----------------------</p>
          
          <div className='secondary-btn'>
-          <button className='white-btn'><GoogleIcon />Sign in with Google</button>
+          <button className='white-btn'><GoogleIcon style={{marginRight: "4px"}} />Sign in with Google</button>
           </div>
          <div className='secondary-btn'>
-          <button className='white-btn'><TwitterIcon />Sign in with Twitter</button>
+          <button className='white-btn'><TwitterIcon style={{marginRight: "4px"}} />Sign in with Twitter</button>
          </div>
            <p className='p-signUp'>Don't have account? Let's <a>Sign up</a></p>
         </div>

@@ -1,11 +1,11 @@
 
 .container {
-    /* background-color: #FFFFFF; */
-        background-color: #bd5959;
+    background-color: #FFFFFF;
+        /* background-color: #bd5959; */
     /* width: 40%; */
     margin: auto;
     width: 375px;
-        height: 812px;
+        /* height: 812px; */
     
 }
 
@@ -249,14 +249,18 @@ text-decoration: underline;
 
 .menuProfile{
     width: 325px;
-        height: 55px;
-        top: 29px;
-        left: 25px;
+        height: 100px;
+        /* top: 29px;
+        left: 25px; */
         gap: 0px;
-        border: 1px 0px 0px 0px;
+        /* border: 1px 0px 0px 0px; */
         opacity: 0px;
-        border: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
         margin: auto;
+        /* margin: 25px 19px; */
+        display: flex;
+        align-items: center;
+
 }
 
 .menuAvatar{
@@ -266,7 +270,7 @@ width: 55px;
     left: 25px; */
     gap: 0px;
     opacity: 0px;
-    border: 1px solid goldenrod;
+    /* border: 1px solid goldenrod; */
 }
 
 .menuAvatarImage{
@@ -290,4 +294,181 @@ width: 55px;
         display: flex;
         align-items: center;
         justify-content: center;
+}
+
+.menuName{
+    margin-top: -30px;
+    width: 150px;
+        height: 24px;
+        /* top: 35px;
+        left: 98px; */
+        gap: 0px;
+        opacity: 0px;
+}
+
+.menuName > h1{
+    margin-left: 20px;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+}
+
+.menuName > p{
+    margin-left: 20px;
+    font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: #919191;
+margin-top: -12px;
+}
+
+.menubutton{
+    width: 32px;
+        height: 32px;
+        /* top: 39px;
+        left: 314px; */
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        /* border: 1px solid yellow; */
+        margin-left: 80px;
+}
+
+.menubuttonBorder{
+width: 31px;
+    height: 31px;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #919191;
+}
+
+.menuStats{
+    width: 326px;
+        height: 82px;
+        /* top: 122px;
+        left: 25px;
+        gap: 0px; */
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        /* border: 1px solid black; */
+        margin: 25px 22px;
+            display: flex;
+            align-items: center;
+} 
+
+.menuStatsPost{
+    width: 90px;
+        height: 82px;
+        /* border: 1px solid green; */
+        margin: 0 8px;
+
+}
+.menuStatsPostBorder{
+width: 88px;
+    height: 80px;
+    border-radius: 5%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* flex-wrap: wrap; */
+        border: 1px solid #EEEEEE;
+}
+
+.menuStatsPostBorder > h1 {
+font-size: 25px;
+    font-weight: 400;
+    color: #1A1B23;
+}
+
+.menuStatsPostBorder > p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #919191;
+    margin-top: -18px;
+}
+
+.menuSection {
+border-bottom: 1px solid #EEEEEE;
+}
+
+.menuOptions{
+    margin: 25px 19px;
+    width: 24vw;
+    height: 10vh;
+    /* border: 1px solid #EEEEEE; */
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    text-align: left;
+    align-items: center;
+}
+
+
+.menuOptionLeft > span {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22.5px;
+        color: #1D1D20;
+        /* border: 1px solid blue; */
+}
+
+.menuOptionLeft > p {
+    /* border: 1px solid blue; */
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-top: -1px;
+        color: #919191;;
+}
+
+
+
+/* .menuTotal {
+    width: 1.6vw;
+        height: 3.5vh;
+    border: 1px solid yellow;
+    margin-left: 20%;
+} */
+
+.menuTotalBorder {
+    width: 1.6vw;
+    height: 3.5vh;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 5px 8px 0px #28CD5629;
+    border: 1px solid #28CD56;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 290%;
+}
+
+.menuTotalBorder > p {
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+    color: white;
+}
+
+.white-logoutbtn{
+    background-color: #C9FFD5;
+    width: 325px;
+    height: 58px;
+    opacity: 0px;
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    margin: auto;
+border: 1px solid #28CD56;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 21px;
+        margin-bottom: 20px;
+        color: #28CD56;
 }
