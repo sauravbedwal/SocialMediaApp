@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
-    <div className="container">
+    <div className="container container-padding2">
       <div
         style={{
           display: "flex",
           justifyContent: "flex-start",
           width: "100%",
           height: "auto",
-          margin: "0 0 0 30px",
+          margin: "0",
         }}
       >
         <Link to="/">

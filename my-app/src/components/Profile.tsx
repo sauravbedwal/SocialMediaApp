@@ -13,7 +13,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 const Profile = () => {
   return (
-    <div className="container">
+    <div className="container container-padding2">
       <div className="profileFollowersMenuProfile">
         <Link to="/chat">
           <div className="followersButton-back">
@@ -74,21 +74,19 @@ const Profile = () => {
       </div>
 
       <div className="profileFollowersMenuOptions">
-        <Link to="/notification" style={{ textDecoration: "none" }}>
-          <div>
-            <div className="profileFollowersMenubuttonBorder">
-              <div className="profileOnline-icon">
-                <FiberManualRecordIcon />
-              </div>
-              <div className="profileChatMenubutton">
-                <div className="profileChatMenubuttonBorder">
-                  <SmsOutlinedIcon />
-                </div>
-              </div>
-              <p>Message</p>
+        <div>
+          <div className="profileFollowersMenubuttonBorder">
+            <div className="profileOnline-icon">
+              <FiberManualRecordIcon />
             </div>
+            <div className="profileChatMenubutton">
+              <div className="profileChatMenubuttonBorder">
+                <SmsOutlinedIcon />
+              </div>
+            </div>
+            <p>Message</p>
           </div>
-        </Link>
+        </div>
 
         <div>
           <div className="profileFollowersMenuTotalBorder">
@@ -156,31 +154,29 @@ const Profile = () => {
 
       <div className="menuSection"></div>
 
-      <div>
+      {/* <div>
         <div className="profileGroupMenuStats">
           <div className="profileGroupMenuStatsPost">
             <div className="profileGroupMenuStatsPostBorder">
               <div className="profileGroupMenuAvatarImage"></div>
             </div>
-          </div>
+          </div> */}
 
-          {/* <Link to="/followers" style={{ textDecoration: "none" }}> */}
-          {/* <div className="profileMenuStatsPost">
+      {/* <Link to="/followers" style={{ textDecoration: "none" }}> */}
+      {/* <div className="profileMenuStatsPost">
             <div className="profileMenuStatsPostBorder">
               <div className="profileGroupMenuAvatarImage"></div>
             </div>
           </div> */}
-          {/* </Link> */}
+      {/* </Link> */}
 
-          {/* <div className="profileMenuStatsPost">
+      {/* <div className="profileMenuStatsPost">
             <div className="profileMenuStatsPostBorder">
               <div className="profileGroupMenuAvatarImage"></div>
             </div>
           </div> */}
-        </div>
-
-        <div>hello</div>
-      </div>
+      {/* </div>
+      </div> */}
     </div>
   );
 };

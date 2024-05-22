@@ -4,6 +4,7 @@ import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import { Link, useNavigate } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import SendIcon from '@mui/icons-material/Send';
 
 const Chat = () => {
   // const navigate = useNavigate();
@@ -14,7 +15,10 @@ const Chat = () => {
 
   return (
     <div className="container">
-      <div className="followersMenuProfile">
+      <div style={{
+        display: 'flex', alignItems: 'center', width: "300px",
+        justifyContent: "space-between", height: "10vh"
+      }}>
         <Link to="/followers">
           <div className="followersButton-back">
             <div className="arrow-icon">
@@ -22,23 +26,19 @@ const Chat = () => {
             </div>
           </div>
         </Link>
+        <div style={{ alignItems: "center" }}>
 
-        <div className="online-icon">
-          <FiberManualRecordIcon />
+
+          <div style={{ display: "flex", justifyContent: 'start' }}><FiberManualRecordIcon /><div>@tomcruise</div></div>
+          <div style={{ fontSize: 'small' }}>Last active: 10 sec ago</div>
+
         </div>
-        <Link to="/profile" style={{ textDecoration: "none" }}>
-          <div className="chatFollowersMenuName">
-            <div>@tomcruise</div>
-            <p>Last active: 10 sec ago</p>
-          </div>
-        </Link>
+
         <div className="chatMenubutton">
-          <div className="chatMenubuttonBorder">
-            <LocalPhoneOutlinedIcon />
-          </div>
+            <LocalPhoneOutlinedIcon style={{color:"#4dd969", background:"#e8fded", borderRadius:"50%", padding:"5px"}} />
+
         </div>
       </div>
-
       <div className="menuSection"></div>
 
       <div className="chatUser">
@@ -53,8 +53,79 @@ const Chat = () => {
             </div>
           </div>
         </div>
-
         <div className="chatFriend">
+          <div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div className="followersMenuAvatar">
+                <div className="chatFriendAvatarImage"></div>
+              </div>
+
+            </div>
+
+          </div>
+          <p>Hey too!</p>
+
+        </div>
+
+
+
+        <div className="chatOwner">
+          <p>Hey! How are you? It's been a while. How is your travel to UK?</p>
+
+          <div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div className="followersMenuAvatar">
+                <div className="chatOwnerAvatarImage"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="chatFriend">
+          <div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div className="followersMenuAvatar">
+                <div className="chatFriendAvatarImage"></div>
+              </div>
+            </div>
+          </div>
+          <p>   Its great, UK is awesome, espesially London. New job is good so far!
+            How about you?</p>
+        </div>
+        <div className="chatOwner">
+          <p>Hey! How are you? It's been a while. How is your travel to UK?</p>
+
+          <div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div className="followersMenuAvatar">
+                <div className="chatOwnerAvatarImage"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="chatFriend">
+          <div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div className="followersMenuAvatar">
+                <div className="chatFriendAvatarImage"></div>
+              </div>
+            </div>
+          </div>
+          <p>   Its great, UK is awesome, espesially London. New job is good so far!
+            How about you?</p>
+        </div>
+        <div className="chatOwner">
+          <p>Hey! How are you? It's been a while. How is your travel to UK?</p>
+
+          <div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div className="followersMenuAvatar">
+                <div className="chatOwnerAvatarImage"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* <div className="chatFriend">
           <div>
             <div style={{ display: "flex", alignItems: "center" }}>
               <div className="followersMenuAvatar">
@@ -106,34 +177,31 @@ const Chat = () => {
             Yeah it's great idea, you know - everyone needs water, I dont know
             about stones xD
           </p>
-        </div>
+        </div> */}
       </div>
-
-      <div className="chatMenuSection"></div>
-
       <div className="chatmsgsender">
-        <div>
-          <div className="secondary-btn">
-            <input
-              className="chatWhite-btn"
-              type="text"
-              placeholder="Say something"
-            />
+          <div>
+            <div className="secondary-btn">
+              <input
+                className="chatWhite-btn"
+                type="text"
+                placeholder="Say something"
+              />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <div className="chatMenubutton">
-            <div className="chatMenubuttonBorder">
-              <div className="chatMenuAvatar">
-                <div className="chatMenuAvatarImageBorder">
-                  <div className="chatMenuAvatarImage"></div>
+          <div>
+            <div className="chatMenubutton">
+                {/* <div className="chatMenuAvatar"> */}
+                {/* </div> */}
+                <div >
+                <SendIcon style={{color:"#4dd964", transform: "rotate(-40deg)",background:"#e8fded", borderRadius:"50%", padding:"5px" }}/>
+
                 </div>
-              </div>
+
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

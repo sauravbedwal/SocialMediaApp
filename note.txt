@@ -1616,3 +1616,35 @@ left: 39px; */
     text-align: center;
     color: #4a4a4b;
 }
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+  const promise = new Promise((resolve, reject) => {
+    let foodAvailable = true
+
+    if(foodAvailable){
+        resolve(foodAvailable);
+    }
+    else {
+        const error = new Error("false");
+        reject(error);
+    }
+  })
+
+  promise.then((response) => {
+    console.log(response);
+  }).catch((err) => {
+    console.log(err);
+  })
+
+  async function getData () {
+    const data = await fetch("");
+    const json = await data;
+    console.log(json);
+  }
