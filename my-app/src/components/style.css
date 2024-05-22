@@ -1,6 +1,6 @@
 .container {
-    /* background-color: #FFFFFF; */
-    background-color: #bd5959;
+    background-color: #FFFFFF;
+    /* background-color: #bd5959; */
     /* width: 40%; */
     /* margin: auto; */
     /* width: 375px; */
@@ -393,8 +393,10 @@ border: 1px 0px 0px 0px; */
     line-height: 18px;
     margin-top: -1px;
     color: #919191;
-    ;
+    
 }
+
+
 
 
 
@@ -490,9 +492,9 @@ border: 1px 0px 0px 0px; */
 }
 
 .followersMenuOptions {
-    margin: 10px 5px;
-    width: 24vw;
-    height: 10vh;
+    /* margin: 10px 5px; */
+    /* width: 24vw; */
+    /* height: 10vh; */
     /* border: 1px solid #EEEEEE; */
     display: flex;
     justify-content: space-between;
@@ -643,7 +645,7 @@ margin-top: 30px;
             width: 24vw;
             /* height: 56px; */
             height: 9vh;
-            border: 2px solid #FFFFFF;
+            /* border: 2px solid #FFFFFF; */
             display: flex;
             align-items: center;
 
@@ -686,7 +688,7 @@ font-size: 12px;
             width: 24vw;
             /* height: 56px; */
             height: 9vh;
-            border: 2px solid #FFFFFF;
+            /* border: 2px solid #FFFFFF; */
             display: flex;
             align-items: center;
 }
@@ -728,7 +730,7 @@ font-size: 12px;
         width: 24vw;
         /* height: 56px; */
         height: 9vh;
-        border: 2px solid #FFFFFF;
+        /* border: 2px solid #FFFFFF; */
         display: flex;
         align-items: center;
     
@@ -764,7 +766,7 @@ font-size: 12px;
     width: 24vw;
     /* height: 56px; */
     height: 9vh;
-    border: 2px solid #FFFFFF;
+    /* border: 2px solid #FFFFFF; */
     display: flex;
     align-items: center;
 
@@ -1092,4 +1094,134 @@ margin-top: 20%;
         /* background: #E8FDED; */
         color: #585858;
 
+}
+
+
+.notificationProfileMenubutton {
+    width: 6vw;
+    height: 6vh;
+    /* border: 1px solid yellow; */
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.notificationProfileFollowersMenuName {
+    display: flex;
+    align-items: center;
+}
+
+.notificationProfileFollowersMenuName > h1 {
+    /* border: 1px solid black; */
+    /* margin-left: 250%; */
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #1A1B23;
+        margin: 0px 20px 20px 20px;
+
+}
+
+.notificationmenuAvatar{
+    width: 4.1vw;
+    height: 9vh;
+    margin: 0 20px; 
+}
+
+.notificationMenuTotalBorder {
+    width: 1.6vw;
+    height: 3.5vh;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 5px 8px 0px #28CD5629;
+    border: 1px solid #28CD56;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.notificationMenuTotalBorder > p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+}
+
+.notification-span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notification-span > span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: left;
+        padding: 30px;
+}
+
+
+#notification-name{ 
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    color: #1D1D20;
+}
+
+#notification-msg{
+    padding: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+color: #676767;
+
+}
+
+#notification-time{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.5px;
+        text-align: left;
+        color: #919191;
+}
+
+#notification-info{
+border: 1px solid #EEEEEE;
+    /* box-shadow: 0px 4px 14px 0px #0000000A; */
+    /* background: #FFFFFF; */
+}
+
+
+.notification-read{
+display: flex;
+justify-content: space-between;
+}
+
+.notification-tick{
+    color: white;
+background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+border: 0;
+font-size: 12px;
+    font-weight: 400;
+    line-height: 16.5px;
+    border-radius: 10px;
+    width: 60px;
+}
+
+
+.notificationFollowersMenuOptions {
+    /* margin: 10px 5px; */
+    /* width: 24vw; */
+    /* height: 10vh; */
+    /* border: 1px solid #EEEEEE; */
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    text-align: left;
+    align-items: center;
 }

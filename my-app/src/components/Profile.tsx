@@ -74,19 +74,21 @@ const Profile = () => {
       </div>
 
       <div className="profileFollowersMenuOptions">
-        <div>
-          <div className="profileFollowersMenubuttonBorder">
-            <div className="profileOnline-icon">
-              <FiberManualRecordIcon />
-            </div>
-            <div className="profileChatMenubutton">
-              <div className="profileChatMenubuttonBorder">
-                <SmsOutlinedIcon />
+        <Link to="/notification" style={{ textDecoration: "none" }}>
+          <div>
+            <div className="profileFollowersMenubuttonBorder">
+              <div className="profileOnline-icon">
+                <FiberManualRecordIcon />
               </div>
+              <div className="profileChatMenubutton">
+                <div className="profileChatMenubuttonBorder">
+                  <SmsOutlinedIcon />
+                </div>
+              </div>
+              <p>Message</p>
             </div>
-            <p>Message</p>
           </div>
-        </div>
+        </Link>
 
         <div>
           <div className="profileFollowersMenuTotalBorder">

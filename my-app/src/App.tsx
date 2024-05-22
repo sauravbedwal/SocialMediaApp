@@ -7,6 +7,7 @@ import Menu from "./components/Menu";
 import Followers from "./components/Followers";
 import Chat from "./components/Chat";
 import Profile from "./components/Profile";
+import Notification from "./components/Notification";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
           <Route path="/followers" element={<Followers />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/notification" element={<Notification />} />
         </Routes>
       </BrowserRouter>
     </div>
