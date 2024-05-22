@@ -14,77 +14,170 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 const Profile = () => {
   return (
     <div className="container">
-      <div className="followersMenuProfile">
-        <div className="menuAvatar">
-          <Link to="/chat">
-            <div className="followersButton-back">
-              <div className="arrow-icon">
-                <ArrowBackIcon />
-              </div>
+      <div className="profileFollowersMenuProfile">
+        <Link to="/chat">
+          <div className="followersButton-back">
+            <div className="arrow-icon">
+              <ArrowBackIcon />
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="followersMenuName">
+        <div className="profileFollowersMenuName">
           <h1>Profile</h1>
         </div>
 
         <div className="profileMenubutton">
-          <div className="chatMenubuttonBorder">
+          <div className="profileMenubuttonBorder">
             <FavoriteBorderOutlinedIcon />
           </div>
-          <div className="chatMenubuttonBorder">
+          <div className="profileMenubuttonBorder">
             <SearchOutlinedIcon />
           </div>
         </div>
+      </div>
 
-        <div className="chatMenuSection"></div>
+      <div className="menuSection"></div>
 
-        {/* <div className="menuProfile">
-          <div className="menuAvatar">
-            <div className="menuAvatarImageBorder">
-              <div className="menuAvatarImage"></div>
-            </div>
+      <div className="profileMenuProfile">
+        <div className="profileMenuAvatar">
+          <div className="profileMenuAvatarImageBorder">
+            <div className="profileMenuAvatarImage"></div>
           </div>
-        </div> */}
+        </div>
+      </div>
 
-        {/* <div className="chatFollowersMenuName">
-          <div>@tomcruise</div>
-          <p>Last active: 10 sec ago</p>
-        </div> */}
+      <div className="chatFollowersMenuName">
+        <div>Tom Cruise</div>
+        <p>@tomcruise</p>
+      </div>
 
-        {/* <div className="chatMenubutton">
-          <div className="chatMenubuttonBorder">
-            <FacebookOutlinedIcon />
-            <InstagramIcon />
-            <PinterestIcon />
-            <TwitterIcon />
-          </div>
-        </div> */}
+      <div className="profileMenubuttonSocial">
+        <div className="profileMenubuttonBorderSocial">
+          <FacebookOutlinedIcon
+            style={{ width: "40px", height: "30px", color: "#1877F2" }}
+          />
+          <InstagramIcon
+            style={{
+              width: "40px",
+              height: "30px",
+              color: "#E1306C",
+            }}
+          />
+          <PinterestIcon
+            style={{ width: "40px", height: "30px", color: "E60023" }}
+          />
+          <TwitterIcon
+            style={{ width: "40px", height: "30px", color: "#1DA1F2" }}
+          />
+        </div>
+      </div>
 
-        {/* <div className="followersMenuOptions">
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div className="online-icon">
+      <div className="profileFollowersMenuOptions">
+        <div>
+          <div className="profileFollowersMenubuttonBorder">
+            <div className="profileOnline-icon">
               <FiberManualRecordIcon />
             </div>
-            <div className="chatMenubutton">
-              <div className="chatMenubuttonBorder">
+            <div className="profileChatMenubutton">
+              <div className="profileChatMenubuttonBorder">
                 <SmsOutlinedIcon />
               </div>
             </div>
-            <div>
-              <div className="followersMenubuttonBorder">
-                <p>Following</p>
-              </div>
+            <p>Message</p>
+          </div>
+        </div>
+
+        <div>
+          <div className="profileFollowersMenuTotalBorder">
+            <p>Follow</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="menuStats">
+        <div className="menuStatsPost">
+          <div className="menuStatsPostBorder">
+            <div
+              style={{ fontSize: "25px", fontWeight: "600", color: "#1A1B23" }}
+            >
+              6.3k
+            </div>
+            <div
+              style={{ fontSize: "12px", fontWeight: "400", color: "#919191" }}
+            >
+              Followers
+            </div>
+          </div>
+        </div>
+
+        {/* <Link to="/followers" style={{ textDecoration: "none" }}> */}
+        <div className="menuStatsPost">
+          <div className="menuStatsPostBorder">
+            <div
+              style={{
+                fontSize: "25px",
+                fontWeight: "600",
+                color: "#1A1B23",
+              }}
+            >
+              572
+            </div>
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "#919191",
+              }}
+            >
+              Post
+            </div>
+          </div>
+        </div>
+        {/* </Link> */}
+
+        <div className="menuStatsPost">
+          <div className="menuStatsPostBorder">
+            <div
+              style={{ fontSize: "25px", fontWeight: "600", color: "#1A1B23" }}
+            >
+              2.5k
+            </div>
+            <div
+              style={{ fontSize: "12px", fontWeight: "400", color: "#919191" }}
+            >
+              Following
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="menuSection"></div>
+
+      <div>
+        <div className="profileGroupMenuStats">
+          <div className="profileGroupMenuStatsPost">
+            <div className="profileGroupMenuStatsPostBorder">
+              <div className="profileGroupMenuAvatarImage"></div>
             </div>
           </div>
 
-          <div>
-            <div className="followersMenuTotalBorder">
-              <p>Follow</p>
+          {/* <Link to="/followers" style={{ textDecoration: "none" }}> */}
+          {/* <div className="profileMenuStatsPost">
+            <div className="profileMenuStatsPostBorder">
+              <div className="profileGroupMenuAvatarImage"></div>
             </div>
-          </div>
-        </div> */}
+          </div> */}
+          {/* </Link> */}
+
+          {/* <div className="profileMenuStatsPost">
+            <div className="profileMenuStatsPostBorder">
+              <div className="profileGroupMenuAvatarImage"></div>
+            </div>
+          </div> */}
+        </div>
+
+        <div>hello</div>
       </div>
     </div>
   );

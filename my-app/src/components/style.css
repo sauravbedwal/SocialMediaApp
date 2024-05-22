@@ -263,14 +263,6 @@ border: 1px 0px 0px 0px; */
     /* border: 1px solid goldenrod; */
 }
 
-.menuAvatarImage {
-    width: 3.3vw;
-    height: 6.9vh;
-    margin: auto;
-    background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\menuImageAvatar.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .menuAvatarImageBorder {
     width: 3.85vw;
@@ -280,6 +272,15 @@ border: 1px 0px 0px 0px; */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menuAvatarImage {
+    width: 3.3vw;
+    height: 6.9vh;
+    margin: auto;
+    background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\menuImageAvatar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* .menuName{
@@ -316,7 +317,7 @@ border: 1px 0px 0px 0px; */
     width: 2.4vw;
     height: 5vh;
     /* border: 1px solid yellow; */
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 .menubuttonBorder {
@@ -454,10 +455,10 @@ border: 1px 0px 0px 0px; */
 
 .followersMenuName > h1 {
     /* border: 1px solid black; */
-    margin: 60%;
+    margin: 70%;
     font-size: 18px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 27px;
 
 }
 
@@ -480,7 +481,7 @@ border: 1px 0px 0px 0px; */
     border-radius: 8px;
     background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
     box-shadow: 0px 4px 14px 0px #28CD5630;
-    padding: 4px;
+    padding: 10px;
     margin: 25% 55%;
     display: flex;
     justify-content: center;
@@ -580,7 +581,7 @@ border: 1px 0px 0px 0px; */
     width: 2.4vw;
     height: 5vh;
     /* border: 1px solid yellow; */
-    margin-left: 140px;
+    margin-left: 130px;
 }
 
 .chatMenubuttonBorder {
@@ -860,11 +861,235 @@ background: #FFFFFF;
     width: 100%;
 }
 
-/* .profileMenubutton {
-    width: 2.4vw;
-    height: 5vh;
-    border: 1px solid yellow;
-    margin-left: 140px;
+.profileMenubutton {
+    width: 6vw;
+    height: 6vh;
+    /* border: 1px solid yellow; */
+    margin-left: 200px;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
+}
+
+
+.profileMenubuttonBorder {
+    width: 3vw;
+    height: 6vh;
+    /* border: 1px solid #EEEEEE; */
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #E8FDED; */
+    color: #585858;
+}
+
+.profileFollowersMenuProfile {
+    width: 24vw;
+    height: 16vh;
+    /* border-bottom: 1px solid #EEEEEE; */
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.profileFollowersMenuName > h1 {
+    /* border: 1px solid black; */
+    margin-left: 250%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #1A1B23;
+
+}
+
+
+.profileMenuAvatarImage {
+    width: 8vw;
+    height: 17vh;
+/* width: 120px; */
+    /* height: 120px; */
+
+    margin: auto;
+    background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\profileMainAvatarImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profileMenuProfile {
+    width: 24vw;
+    /* height: 19vh; */
+    /* border-bottom: 1px solid #EEEEEE; */
+    /* margin: auto; */
+    /* margin: 25px 19px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    }
+
+.profileMenuAvatar {
+    width: 8vw;
+    height: 17vh;
+margin-left: 30px;
+    /* width: 120px; */
+/* height: 120px; */
+margin-top: 20%;
+    /* border: 1px solid goldenrod; */
+}
+
+
+.profileMenuAvatarImageBorder {
+    width: 8vw;
+    height: 17vh;
+     /* width: 118.5px; */
+/* height: 118.5px; */
+    border: 2px solid #28CD56;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileOnline-icon {
+    margin-right: 12px;
+    margin-bottom: 15px;
+    width: 8px;
+        height: 8px;
+    color: #0F9804;
+
+}
+
+.profileFollowersMenubuttonBorder {
+    width: 9vw;
+    height: 6vh;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 8px 0px #eeeeeeec;
+    border: 1px solid #EEEEEE;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.profileFollowersMenubuttonBorder>p {
+    margin-right:  5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #919191;
+}
+
+.profileFollowersMenuOptions {
+    margin: 10px 5px;
+    width: 24vw;
+    height: 10vh;
+    /* border: 1px solid #EEEEEE; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4px;
+    text-align: left;
+    align-items: center;
+}
+.profileChatMenubutton {
+    /* width: 2.4vw;
+    height: 5vh; */
+    /* border: 1px solid yellow; */
+    margin: 0 5px;
+    margin-top: 4px;
+
+}
+
+.profileChatMenubuttonBorder {
+    /* width: 3vw; */
+    /* height: 6vh; */
+    /* border: 1px solid #EEEEEE; */
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #E8FDED; */
+    color: #0F393A;
+}
+
+.profileFollowersMenuTotalBorder {
+    width: 9vw;
+    height: 6vh;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 5px 8px 0px #28CD5629;
+    border: 1px solid #28CD56;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profileFollowersMenuTotalBorder>p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+}
+
+.profileGroupMenuStats{
+            width: 24vw;
+            height: 15vh;
+            border: 1px solid black;
+            margin: 25px 22px;
+            display: flex;
+            align-items: center;
+        
+}
+/* .pprofileGroupMenuStatsPost {
+    width: 6.5vw;
+    height: 12.5vh;
+    border: 1px solid green;
+    margin: 0 11px;
+
 } */
+
+/* .profileGroupMenuStatsPostBorder {
+    width: 9vw;
+        height: 23vh;
+            border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #EEEEEE;
+
+} */
+
+.profileGroupMenuAvatarImage {
+    /* width: 135px; */
+        /* height: 166px; */
+    width: 9vw;
+    height: 23vh;
+    /* margin: auto; */
+    background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\profileGroupImage1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profileMenubuttonSocial{
+    margin-left: 180px;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+}
+
+.profileMenubuttonBorderSocial{
+    width: 3vw;
+        height: 6vh;
+        /* border: 1px solid #EEEEEE; */
+        /* border-radius: 50%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background: #E8FDED; */
+        color: #585858;
+
+}
