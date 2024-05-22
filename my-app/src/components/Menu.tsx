@@ -1,8 +1,9 @@
+
 import React from 'react'
 import "./style.css"
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import {Link} from "react-router-dom";
-
+ 
 const Menu = () => {
   return (
     <div className='container'>
@@ -23,28 +24,30 @@ const Menu = () => {
             </div>
         </div>
 
+        <div className='menuSection'></div>
         
         <div className="menuStats">
             <div className="menuStatsPost">
                  <div className='menuStatsPostBorder'>
-                <h3>572</h3>
-            <p>Post</p>      
+                <div style={{fontSize: "25px", fontWeight: "600", color: "#1A1B23"}}>572</div>
+            <div style={{fontSize: "12px", fontWeight: "400", color: "#919191"}}>Post</div>      
                  </div>
             </div>
             
             <Link to="/followers" style={{textDecoration: "none"}}>
             <div className="menuStatsPost">
                  <div className='menuStatsPostBorder'>
-                <h3>6.3k</h3>
-            <p>Followers</p>      
+            <div style={{fontSize: "25px", fontWeight: "600", color: "#1A1B23"}}>6.3k</div>
+            <div style={{fontSize: "12px", fontWeight: "400", color: "#919191"}}>Followers</div>       
                  </div>
             </div>
             </Link>
 
             <div className="menuStatsPost">
                  <div className='menuStatsPostBorder'>
-                <h3>2.5k</h3>
-            <p>Following</p>      
+            <div style={{fontSize: "25px", fontWeight: "600", color: "#1A1B23"}}>2.5k</div>
+            <div style={{fontSize: "12px", fontWeight: "400", color: "#919191"}}>Following</div>       
+      
                  </div>
             </div>
         </div>
@@ -55,7 +58,7 @@ const Menu = () => {
                 <span>Notification</span>
             <p>See your recent activity</p>
             </div>
-            <div className="menuTotal">
+            <div>
                  <div className='menuTotalBorder'>
                     <p>35</p>
                  </div>
@@ -86,7 +89,7 @@ const Menu = () => {
                 <span>Messages</span>
             <p>Message your friends</p>
             </div>
-            <div className="menuTotal">
+            <div>
                  <div className='menuTotalBorder'>
                     <p>2</p>
                  </div>

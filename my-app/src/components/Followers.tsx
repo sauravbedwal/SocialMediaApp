@@ -1,13 +1,182 @@
 import React from 'react'
+import "./style.css"
+import {Link} from "react-router-dom"
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const Followers = () => {
   return (
-    <div>
-        <div>
-            <span>button</span>
-            Followers(4K)
+    <div className='container'>
+<div className="followersMenuProfile">
+            <div className="menuAvatar">
+                    <Link to="/menu">
+        <div className="followersButton-back">
+        <div className="arrow-icon">
+          <ArrowBackIcon />
+        </div>
+        </div>
+        </Link>
+            </div>
+            <div className='followersMenuName'>
+                <h1>Followers(4K)</h1>
+            </div>
         </div>
 
+          <div className='menuSection'></div>
+       
+       <div className='menuSection'>
+       <div className='followersMenuOptions'>
+        <div style={{display: "flex", alignItems: "center"}}>
+            <div className="followersMenuAvatar">
+               <div className='followersMenuAvatarImage'></div>
+            </div>
+            <div className='menuOptionLeft'>
+                <span>Shah Rukh Khan</span>
+            <p>@srk</p>
+            </div>
+        </div>
+            <div>
+                 <div className='followersMenuTotalBorder'>
+                    <p>Follow</p>
+                 </div>
+            </div>                              
+            </div>
+            </div>
+
+            <div className='menuSection'>
+       <div className='followersMenuOptions'>
+        <div style={{display: "flex", alignItems: "center"}}>
+            <div className="followersMenuAvatar">
+               <div className='followersMenuAvatarImage'></div>
+            </div>
+            <div className='menuOptionLeft'>
+                <span>Robert Downey Jr.</span>
+            <p>@rdj</p>
+            </div>
+        </div>
+            <div>
+                 <div className='followersMenubuttonBorder'>
+                   <p>Following</p>
+                 </div>
+            </div>
+            </div>
+            </div>
+
+            <div className='menuSection'>
+                <Link to="/chat" style={{textDecoration: "none"}}>
+       <div className='followersMenuOptions'>
+        <div style={{display: "flex", alignItems: "center"}}>
+            <div className="followersMenuAvatar">
+               <div className='followersMenuAvatarImage'></div>
+            </div>
+            <div className='menuOptionLeft'>
+                <span>Tom Cruise</span>
+            <p>@tomcruise</p>
+            </div>
+        </div>
+            <div>
+                 <div className='followersMenuTotalBorder'>
+                    <p>Follow</p>
+                 </div>
+            </div>                              
+            </div>
+            </Link>
+            </div>
+
+            <div className='menuSection'>
+       <div className='followersMenuOptions'>
+        <div style={{display: "flex", alignItems: "center"}}>
+            <div className="followersMenuAvatar">
+               <div className='followersMenuAvatarImage'></div>
+            </div>
+            <div className='menuOptionLeft'>
+                <span>Elezabeth</span>
+            <p>@elezabeth</p>
+            </div>
+        </div>
+            {/* <div>
+                 <div className='followersMenuTotalBorder'>
+                    <p>Follow</p>
+                 </div>
+            </div>                               */}
+            <div>
+                 <div className='followersMenubuttonBorder'>
+                   <p>Following</p>
+                 </div>
+            </div>
+            </div>
+            </div>
+
+            <div className='menuSection'>
+       <div className='followersMenuOptions'>
+        <div style={{display: "flex", alignItems: "center"}}>
+            <div className="followersMenuAvatar">
+               <div className='followersMenuAvatarImage'></div>
+            </div>
+            <div className='menuOptionLeft'>
+                <span>Shah Rukh Khan</span>
+            <p>@srk</p>
+            </div>
+        </div>
+            {/* <div>
+                 <div className='followersMenuTotalBorder'>
+                    <p>Follow</p>
+                 </div>
+            </div>                               */}
+            <div>
+                 <div className='followersMenubuttonBorder'>
+                   <p>Following</p>
+                 </div>
+            </div>
+            </div>
+            </div>
+
+            <div className='menuSection'>
+       <div className='followersMenuOptions'>
+        <div style={{display: "flex", alignItems: "center"}}>
+            <div className="followersMenuAvatar">
+               <div className='followersMenuAvatarImage'></div>
+            </div>
+            <div className='menuOptionLeft'>
+                <span>Shah Rukh Khan</span>
+            <p>@srk</p>
+            </div>
+        </div>
+            {/* <div>
+                 <div className='followersMenuTotalBorder'>
+                    <p>Follow</p>
+                 </div>
+            </div>                               */}
+            <div>
+                 <div className='followersMenubuttonBorder'>
+                   <p>Following</p>
+                 </div>
+            </div>
+            </div>
+            </div>
+
+            <div className='menuSection'>
+       <div className='followersMenuOptions'>
+        <div style={{display: "flex", alignItems: "center"}}>
+            <div className="followersMenuAvatar">
+               <div className='followersMenuAvatarImage'></div>
+            </div>
+            <div className='menuOptionLeft'>
+                <span>Shah Rukh Khan</span>
+            <p>@srk</p>
+            </div>
+        </div>
+            {/* <div>
+                 <div className='followersMenuTotalBorder'>
+                    <p>Follow</p>
+                 </div>
+            </div>                               */}
+            <div>
+                 <div className='followersMenubuttonBorder'>
+                   <p>Following</p>
+                 </div>
+            </div>
+            </div>
+            </div>
 {/* <div>
         <div>
             <span>Image</span>

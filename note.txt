@@ -1,2 +1,1618 @@
 onBoard : slider, image border
 sign in : 
+
+
+
+.container {
+    /* background-color: #FFFFFF; */
+    /* width: 40%; */
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 95vw; */
+        height: 99vh;
+        /* border: 1px solid black; */
+        
+    
+}
+
+
+.background{
+    height: 62vh;
+    width: 24.5vw;
+    background: url("C:\Users\E088088\Desktop\SocialMedia\SocialMediaApp\my-app\src\images\onboardImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .image-border{
+width: 388.29px;
+    height: 460.86px;
+    top: -21.36px;
+    left: -11.64px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+} */
+
+.onboarding-heading{
+    width: 317px;
+    height: 112px;
+    margin: auto;
+    /* top: 469px; */
+    /* left: 29px; */
+    gap: 0px;
+    opacity: 0px;
+}
+
+.onboarding-heading > h1 {
+    /* font-family: Poppins; */
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 56px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+}
+
+.onboarding-paragraph {
+    width: 291px;
+        height: 48px;
+        top: 591px;
+        left: 42px;
+        gap: 0px;
+        opacity: 0px;
+        margin: auto;
+}
+
+.onboarding-paragraph > p {
+    /* font-family: Poppins; */
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #919191;
+margin: 0;
+padding: 0;
+}
+
+.slider{
+    margin:"0";
+    padding: "0"
+} 
+
+.btn {
+    width: 325px;
+    height: 58px;
+    top: 716px;
+    left: 25px;
+    gap: 0px;
+    opacity: 0px;
+    border: 0;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 2px;
+    margin: 5px 0px;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.Button-back{
+    width: 25px;
+    height: 25px;
+    /* top: 26px;
+    left: 25px; */
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 4px 14px 0px #28CD5630;
+    padding: 4px;
+    margin: 32px 0 0 0;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-icon{
+    width: 40px;
+height: 20px;
+/* top: 45px;
+left: 39px; */
+gap: 0px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+color: #FFFFFF;
+}
+
+.signInHeading {   
+    width: 246px;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.signInHeading > h1 {
+    /* margin-top: 80px; */
+            font-size: 40px;
+            font-weight: bold;
+        line-height: 60px;
+        text-align: center;
+        margin:0;
+        padding: 0;
+}
+
+.signInHeading > p {
+    margin-top: -25px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+    color: #4A4A4A;
+    margin:0;
+        padding: 0;
+}
+
+.signInForm {
+
+    display: flex;
+    height: 193px;
+    gap: 0px;
+    opacity: 0px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signInInput1 {
+width: 325px;
+height: 18vh;
+/* top: 230px;
+left: 25px; */
+gap: 0px;
+opacity: 0px;
+border: 1px solid #4DD969;
+border-radius: 8px;
+padding-left: 10px;
+margin: 10px 0;
+}
+
+.signInInput2{
+    margin-top: 10px;
+    width: 325px;
+height: 18vh;
+/* top: 317px;
+left: 25px;
+gap: 0px;
+border: 1px 0px 0px 0px; */
+border-radius: 8px;
+opacity: 0px;
+padding-left: 10px;
+    border: 1px solid #EEEEEE;
+}
+
+.signInForm > h5 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;   
+      color: #37d25e;
+    text-decoration: underline;
+}
+
+
+.p-signIn {
+    color: #DDDDDD;
+    margin: 0;
+}
+
+.para-signIn {
+    display: inline;
+    color: #818181;
+    font-weight: 500;
+    font-size: small;
+}
+.secondary-btn{
+    margin: 15px 0;
+    width: 100%;
+}
+
+.white-btn{
+    color: #231D25;
+        display: flex;
+            justify-content:center;
+            align-items: center;
+        background-color: white;
+            width: 325px;
+            height: 58px;
+            /* top: 716px;
+            left: 25px;
+            gap: 0px; */
+            opacity: 0px;
+            border: 0;
+            border-radius: 5px;
+            color: black;
+            padding: 2px;
+            margin: auto;
+            border: 1px solid #EEEEEE;
+}
+
+.p-signUp {
+    color: #818181;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.p-signUp > a {
+color: #37d25e;
+font-size: 15px;
+font-weight: 500;
+text-decoration: underline;
+}
+
+.menuProfile{
+                width: 24vw;
+                height: 16vh;
+        border-bottom: 1px solid #EEEEEE;
+        margin: auto;
+        /* margin: 25px 19px; */
+        display: flex;
+        align-items: center;
+
+}
+
+.menuAvatar{
+width: 4.1vw;
+height: 9vh;    
+    /* border: 1px solid goldenrod; */
+}
+
+.menuAvatarImage{
+    width: 3.3vw;
+        height: 6.9vh;
+        margin: auto;
+        background: url("C:\Users\E088088\Desktop\SocialMedia\SocialMediaApp\my-app\src\images\menuImageAvatar.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.menuAvatarImageBorder{
+    width: 3.85vw;
+    height: 8vh;
+    border: 2px solid #28CD56;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+/* .menuName{
+    margin-top: -30px;
+    width: 150px;
+    width: ;
+        height: 24px;
+        gap: 0px;
+        opacity: 0px;
+        border: 1px solid black;
+} */
+
+.menuName > h1{
+        /* border: 1px solid black; */
+    margin-left: 20px;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+}
+
+.menuName > p{
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: #919191;
+margin-top: -12px;
+}
+
+.menubutton{
+    width: 2.4vw;
+        height: 5vh;
+    /* border: 1px solid yellow; */
+        margin-left: 120px;
+}
+
+.menubuttonBorder{
+width: 2.3vw;
+    height: 4.8vh;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #919191;
+}
+
+.menuStats{
+        width: 24vw;
+            height: 12.5vh;
+        /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+} 
+
+.menuStatsPost{
+    width: 6.5vw;
+        height: 12.5vh;
+        /* border: 1px solid green; */
+        margin: 0 8px;
+
+}
+.menuStatsPostBorder{
+width: 6.4vw;
+    height: 12.4vh;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-direction: column;
+        border: 1px solid #EEEEEE;
+        
+}
+
+.menuStatsPostBorder > h1 {
+font-size: 25px;
+    font-weight: 400;
+    color: #1A1B23;
+}
+
+.menuStatsPostBorder > p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #919191;
+    margin-top: -18px;
+}
+
+.menuSection {
+border-bottom: 1px solid #EEEEEE;
+width: 100%;
+}
+
+.menuOptions{
+    width: 100%;
+    height: 10vh;
+    /* border: 1px solid #EEEEEE; */
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    text-align: left;
+    align-items: center;
+}
+
+
+.menuOptionLeft > span {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22.5px;
+        color: #1D1D20;
+        /* border: 1px solid blue; */
+}
+
+.menuOptionLeft > p {
+    /* border: 1px solid blue; */
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-top: -1px;
+        color: #919191;;
+}
+
+
+
+/* .menuTotal {
+    width: 1.6vw;
+        height: 3.5vh;
+    border: 1px solid yellow;
+    margin-left: 20%;
+} */
+
+.menuTotalBorder {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 5px 8px 0px #28CD5629;
+    border: 1px solid #28CD56;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 290%;
+}
+
+.menuTotalBorder > p {
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+    color: white;
+}
+
+.white-logoutbtn{
+    background-color: #C9FFD5;
+    width:100%;
+    height: 58px;
+    opacity: 0px;
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    margin: auto;
+border: 1px solid #28CD56;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 21px;
+        color: #28CD56;
+}
+
+
+---------------------------------------------------------------------------------------------
+
+
+import React from "react";
+import "./style.css";
+import Button from "./Button";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import GoogleIcon from "@mui/icons-material/Google";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import { Link } from "react-router-dom";
+
+const SignIn = () => {
+  return (
+    <div className="container">
+      <div style={{ display: "flex" ,justifyContent:'flex-start', width:'100%', height:"auto", margin:"0 0 0 30px"}}>
+        <Link to="/">
+          <div className="Button-back">
+            <div className="arrow-icon">
+              <ArrowBackIcon />
+            </div>
+          </div>
+        </Link>
+      </div>
+      <div className="signInHeading">
+        <h1>Hello Again!</h1>
+        <p className="signInline">Sign in to your account</p>
+      </div>
+      <form className="signInForm">
+        <input
+          className="signInInput1"
+          type="email"
+          name="email"
+          placeholder="Email address"
+        />
+
+        <input
+          className="signInInput2"
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+        <h5>Forgot your password?</h5>
+      </form>
+      <div>
+
+      <Link to="/menu">
+        <Button title={"Sign in"} />
+      </Link>
+      </div>
+      <p className="p-signIn">
+        ---------------------- <p className="para-signIn"> Or with </p>{" "}
+        ----------------------
+      </p>
+
+      <div className="secondary-btn">
+        <button className="white-btn">
+          <GoogleIcon />
+          Sign in with Google
+        </button>
+      </div>
+      <div className="secondary-btn">
+        <button className="white-btn">
+          <TwitterIcon />
+          Sign in with Twitter
+        </button>
+      </div>
+      <p className="p-signUp">
+        Don't have account? Let's <a>Sign up</a>
+      </p>
+    </div>
+  );
+};
+
+export default SignIn;
+
+//file:///C:/Users/saurav%20sharma/Downloads/Task%20frontend%20developer.pdf
+// https://www.figma.com/design/wHXneI09mGwFGwAfC3NAeC/Social-Media-App?node-id=1-22&t=UhsgamRWsEkYeND2-0
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+
+mine
+
+
+.container {
+    /* background-color: #FFFFFF; */
+        background-color: #bd5959;
+    /* width: 40%; */
+    margin: auto;
+    width: 375px;
+        /* height: 812px; */
+    
+}
+
+.background{
+    height: 432.84px;
+    width: 375px;
+    background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\onboardImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .image-border{
+width: 388.29px;
+    height: 460.86px;
+    top: -21.36px;
+    left: -11.64px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+} */
+
+.onboarding-heading{
+    width: 317px;
+    height: 112px;
+    margin: auto;
+    /* top: 469px; */
+    /* left: 29px; */
+    gap: 0px;
+    opacity: 0px;
+}
+
+.onboarding-heading > h1 {
+    /* font-family: Poppins; */
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 56px;
+        text-align: center;
+}
+
+.onboarding-paragraph {
+    width: 291px;
+        height: 48px;
+        top: 591px;
+        left: 42px;
+        gap: 0px;
+        opacity: 0px;
+        margin: auto;
+}
+
+.onboarding-paragraph > p {
+    /* font-family: Poppins; */
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #919191;
+}
+
+/* .slider{
+    margin: auto;
+    width: 8px;
+        height: 5px;
+        top: 677px;
+        left: 203px;
+        gap: 0px;
+        opacity: 0.25px;
+        color:#020101;
+} */
+
+.btn {
+    width: 325px;
+    height: 58px;
+    top: 716px;
+    left: 25px;
+    gap: 0px;
+    opacity: 0px;
+    border: 0;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 2px;
+    margin: 5px 0px;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.Button-back{
+    width: 45px;
+    height: 45px;
+    /* top: 26px;
+    left: 25px; */
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 4px 14px 0px #28CD5630;
+    padding: 4px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-icon{
+    width: 40px;
+height: 20px;
+/* top: 45px;
+left: 39px; */
+gap: 0px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+color: #FFFFFF;
+}
+
+.signInHeading {   
+    width: 246px;
+    height: 60px;
+    top: 108px;
+    left: 65px;
+    gap: 0px;
+    opacity: 0px;
+    margin: auto;
+}
+
+.signInHeading > h1 {
+    /* margin-top: 80px; */
+            font-size: 40px;
+            font-weight: bold;
+        line-height: 60px;
+        text-align: center;
+}
+
+.signInHeading > p {
+    margin-top: -25px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+    color: #4A4A4A;
+}
+
+.signInForm {
+    margin: 60px 0;
+    width: 325.34px;
+        height: 193px;
+        /* top: 230px;
+        left: 24.66px; */
+        gap: 0px;
+        opacity: 0px;
+        margin-left: 18px;
+}
+
+.signInInput1 {
+width: 325px;
+height: 69px;
+/* top: 230px;
+left: 25px; */
+gap: 0px;
+opacity: 0px;
+border: 1px solid #4DD969;
+border-radius: 8px;
+padding-left: 10px;
+margin: 10px 0;
+}
+
+.signInInput2{
+    margin-top: 10px;
+    width: 325px;
+height: 69px;
+/* top: 317px;
+left: 25px;
+gap: 0px;
+border: 1px 0px 0px 0px; */
+border-radius: 8px;
+opacity: 0px;
+padding-left: 10px;
+    border: 1px solid #EEEEEE;
+}
+
+.signInForm > h5 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;   
+      color: #37d25e;
+    text-decoration: underline;
+}
+
+
+.p-signIn {
+    color: #DDDDDD;
+}
+
+.para-signIn {
+    display: inline;
+    color: #818181;
+    font-weight: 500;
+    font-size: small;
+}
+.secondary-btn{
+    margin: 15px 0;
+}
+
+.white-btn{
+    color: #231D25;
+        display: flex;
+            justify-content:center;
+            align-items: center;
+        background-color: white;
+            width: 325px;
+            height: 58px;
+            /* top: 716px;
+            left: 25px;
+            gap: 0px; */
+            opacity: 0px;
+            border: 0;
+            border-radius: 5px;
+            color: black;
+            padding: 2px;
+            margin: auto;
+            border: 1px solid #EEEEEE;
+}
+
+.p-signUp {
+    color: #818181;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.p-signUp > a {
+color: #37d25e;
+font-size: 15px;
+font-weight: 500;
+text-decoration: underline;
+}
+
+.menuProfile{
+                width: 24vw;
+                height: 16vh;
+        border-bottom: 1px solid #EEEEEE;
+        margin: auto;
+        /* margin: 25px 19px; */
+        display: flex;
+        align-items: center;
+
+}
+
+.menuAvatar{
+width: 4.1vw;
+height: 9vh;    
+    /* border: 1px solid goldenrod; */
+}
+
+.menuAvatarImage{
+    width: 3.3vw;
+        height: 6.9vh;
+        margin: auto;
+        background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\menuImageAvatar.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.menuAvatarImageBorder{
+    width: 3.85vw;
+    height: 8vh;
+    border: 2px solid #28CD56;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+/* .menuName{
+    margin-top: -30px;
+    width: 150px;
+    width: ;
+        height: 24px;
+        gap: 0px;
+        opacity: 0px;
+        border: 1px solid black;
+} */
+
+.menuName > h1{
+        /* border: 1px solid black; */
+    margin-left: 20px;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+}
+
+.menuName > p{
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: #919191;
+margin-top: -12px;
+}
+
+.menubutton{
+    width: 2.4vw;
+        height: 5vh;
+    /* border: 1px solid yellow; */
+        margin-left: 120px;
+}
+
+.menubuttonBorder{
+width: 2.3vw;
+    height: 4.8vh;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #919191;
+}
+
+.menuStats{
+        width: 24vw;
+            height: 12.5vh;
+        /* border: 1px solid black; */
+        margin: 25px 22px;
+            display: flex;
+            align-items: center;
+} 
+
+.menuStatsPost{
+    width: 6.5vw;
+        height: 12.5vh;
+        /* border: 1px solid green; */
+        margin: 0 8px;
+
+}
+.menuStatsPostBorder{
+width: 6.4vw;
+    height: 12.4vh;
+    border-radius: 5%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* flex-wrap: wrap;  */
+        border: 1px solid #EEEEEE;
+        
+}
+ 
+.menuStatsPostBorder > h1 {
+font-size: 25px;
+    font-weight: 400;
+    color: #1A1B23;
+}
+
+.menuStatsPostBorder > p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #919191;
+    margin-top: -18px;
+}
+
+.menuSection {
+border-bottom: 1px solid #EEEEEE;
+}
+
+.menuOptions{
+    margin: 25px 19px;
+    width: 24vw;
+    height: 10vh;
+    /* border: 1px solid #EEEEEE; */
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    text-align: left;
+    align-items: center;
+}
+
+
+.menuOptionLeft > span {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22.5px;
+        color: #1D1D20;
+        /* border: 1px solid blue; */
+}
+
+.menuOptionLeft > p {
+    /* border: 1px solid blue; */
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-top: -1px;
+        color: #919191;;
+}
+
+
+
+/* .menuTotal {
+    width: 1.6vw;
+        height: 3.5vh;
+    border: 1px solid yellow;
+    margin-left: 20%;
+} */
+
+.menuTotalBorder {
+    width: 1.6vw;
+    height: 3.5vh;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 5px 8px 0px #28CD5629;
+    border: 1px solid #28CD56;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 290%;
+}
+
+.menuTotalBorder > p {
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+    color: white;
+}
+
+.white-logoutbtn{
+    background-color: #C9FFD5;
+    width: 325px;
+    height: 58px;
+    opacity: 0px;
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    margin: auto;
+border: 1px solid #28CD56;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 21px;
+        margin-bottom: 20px;
+        color: #28CD56;
+}
+
+
+/* .followersMenuName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+} */
+
+.followersMenuName > h1 {
+    /* border: 1px solid black; */
+    margin: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+ 
+}
+
+
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+mine updated with him
+
+
+
+.container {
+    /* background-color: #FFFFFF; */
+    background-color: #bd5959;
+    /* margin: auto;
+    width: 375px; */
+    /* height: 812px; */
+/* width: 40%; */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 99vh;
+
+}
+
+.background {
+    /* height: 432.84px;
+    width: 375px; */
+    background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\onboardImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 62vh;
+    width: 24.5vw;
+}
+
+
+.onboarding-heading {
+    width: 317px;
+    height: 112px;
+    margin: auto;
+}
+
+.onboarding-heading>h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.onboarding-paragraph {
+    width: 291px;
+    height: 48px;
+    top: 591px;
+    left: 42px;
+    gap: 0px;
+    opacity: 0px;
+    margin: auto;
+}
+
+.onboarding-paragraph>p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #919191;
+
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn {
+    width: 325px;
+    height: 58px;
+    border: 0;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 2px;
+    /* margin: 10px 0;
+    margin-left: 25px;  */
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    cursor: pointer;
+
+    margin: 5px 0px;
+}
+
+.Button-back {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 4px 14px 0px #28CD5630;
+    padding: 4px;
+    margin: 32px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    width: 40px;
+    height: 20px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    color: #FFFFFF;
+}
+
+.signInHeading {
+    width: 246px;
+    /* height: 60px;
+    margin: auto; */
+
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signInHeading>h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.signInHeading>p {
+    margin-top: -25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #4A4A4A;
+
+    margin: 0;
+    padding: 0;
+}
+
+.signInForm {
+    /* margin: 60px 0; */
+    /* width: 325.34px; */
+    height: 193px;
+    /* margin-left: 18px; */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signInInput1 {
+    width: 325px;
+    /* height: 69px; */
+   
+    gap: 0px;
+    opacity: 0px;
+    border: 1px solid #4DD969;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin: 10px 0;
+
+    height: 18vh;
+}
+
+.signInInput2 {
+    margin-top: 10px;
+    width: 325px;
+    /* height: 69px; */
+    border-radius: 8px;
+    opacity: 0px;
+    padding-left: 10px;
+    border: 1px solid #EEEEEE;
+
+    height: 18vh;
+}
+
+.signInForm>h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #37d25e;
+    text-decoration: underline;
+}
+
+
+.p-signIn {
+    color: #DDDDDD;
+    /* margin: 0 5%; */
+
+    margin: 0;
+}
+
+.para-signIn {
+    display: inline;
+    color: #818181;
+    font-weight: 500;
+    font-size: small;
+}
+
+.secondary-btn {
+    margin: 15px 0;
+    width: 100%;
+}
+
+.white-btn {
+    color: #231D25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* width: 325px;
+    height: 58px; */
+        margin: 0 19px;
+    opacity: 0px;
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    margin: auto;
+    border: 1px solid #EEEEEE;
+
+    width: 90%;
+        height: 9vh;
+}
+
+.p-signUp {
+    color: #818181;
+    font-weight: 400;
+    font-size: 15px;
+    /* margin: 5% 20%; */
+}
+
+.p-signUp > a {
+    color: #37d25e;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.menuProfile {
+    width: 24vw;
+    height: 16vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.menuAvatar {
+    width: 4.1vw;
+    height: 9vh;
+}
+
+.menuAvatarImage {
+    width: 3.3vw;
+    height: 6.9vh;
+    margin: auto;
+    background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\menuImageAvatar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menuAvatarImageBorder {
+    width: 3.85vw;
+    height: 8vh;
+    border: 2px solid #28CD56;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menuName > h1 {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.menuName > p {
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #919191;
+    margin-top: -12px;
+}
+
+.menubutton {
+    width: 2.4vw;
+    height: 5vh;
+    margin-left: 120px;
+}
+
+.menubuttonBorder {
+    width: 2.3vw;
+    height: 4.8vh;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #919191;
+}
+
+.menuStats {
+    width: 24vw;
+    height: 12.5vh;
+    margin: 25px 22px;
+    display: flex;
+    align-items: center;
+}
+
+.menuStatsPost {
+    width: 6.5vw;
+    height: 12.5vh;
+    /* margin: 0 11px; */
+
+    margin: 0 8px;
+
+}
+
+.menuStatsPostBorder {
+    width: 6.4vw;
+    height: 12.4vh;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #EEEEEE;
+
+}
+
+.menuSection {
+    border-bottom: 1px solid #EEEEEE;
+    width: 100%;
+}
+
+.menuOptions {
+    /* margin: 25px 19px; */
+    /* width: 24vw; */
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    text-align: left;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+.menuOptionLeft>span {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    color: #1D1D20;
+}
+
+.menuOptionLeft>p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: -1px;
+    color: #919191;
+    ;
+}
+
+
+.menuTotalBorder {
+    /* width: 1.6vw;
+    height: 3.5vh; */
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 5px 8px 0px #28CD5629;
+    border: 1px solid #28CD56;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 290%;
+
+    width: 20px;
+    height: 20px;
+}
+
+.menuTotalBorder>p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+}
+
+.white-logoutbtn {
+    background-color: #C9FFD5;
+    width: 90%;
+    /* height: 58px; */
+    height: 9vh;
+        margin: 0 19px;
+    opacity: 0px;
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    border: 1px solid #28CD56;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    margin-bottom: 20px;
+    color: #28CD56;
+}
+
+
+/* .followersMenuName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+} */
+
+.followersMenuName > h1 {
+    /* border: 1px solid black; */
+    margin: 60%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+
+}
+
+.followersMenuProfile {
+    width: 24vw;
+    height: 16vh;
+    /* border-bottom: 1px solid #EEEEEE; */
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+
+}
+
+
+.followersButton-back {
+    width: 25px;
+    height: 25px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 4px 14px 0px #28CD5630;
+    padding: 4px;
+    margin: 25% 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.followersMenuOptions {
+    margin: 10px 5px;
+    width: 24vw;
+    height: 10vh;
+    /* border: 1px solid #EEEEEE; */
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    text-align: left;
+    align-items: center;
+}
+
+
+.followersMenuAvatar {
+    width: 4.1vw;
+    height: 9vh;
+    /* border: 1px solid goldenrod; */
+}
+
+.followersMenuAvatarImage {
+    width: 3.3vw;
+    height: 6.9vh;
+    margin: auto;
+    background: url("F:\Coding PROJECT\Tech Ocenaic Technologies Project\SocialMediaApp\my-app\src\images\followersSrkImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.followersMenuTotalBorder {
+    width: 6vw;
+    height: 5vh;
+    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+    box-shadow: 0px 5px 8px 0px #28CD5629;
+    border: 1px solid #28CD56;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.followersMenuTotalBorder>p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: white;
+}
+
+/* .followersMenubutton {
+    width: 2.4vw;
+    height: 5vh;
+    border: 1px solid yellow;
+    margin-left: 120px;
+} */
+
+.followersMenubuttonBorder {
+      width: 6vw;
+        height: 5vh;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 8px 0px #eeeeeeec;
+    border: 1px solid #EEEEEE;
+        border-radius: 20px;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+
+}
+
+.followersMenubuttonBorder > p{
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 18px;
+ color: #919191;
+}
+
+.online-icon {
+    width: 40px;
+    height: 20px;
+    /* top: 45px;
+left: 39px; */
+    gap: 0px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    color: green;
+}
+
+.chatMenubutton {
+    width: 2.4vw;
+    height: 5vh;
+    /* border: 1px solid yellow; */
+    margin-left: 120px;
+}
+
+.chatMenubuttonBorder {
+    width: 3vw;
+    height: 6vh;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E8FDED;
+    color: #4DD969;
+}
+
+
+
+.chatActive > p {
+    /* margin-top: -25px; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #4a4a4b;
+}
