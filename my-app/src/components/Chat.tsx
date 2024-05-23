@@ -2,17 +2,11 @@ import React from "react";
 import "./style.css";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import SendIcon from "@mui/icons-material/Send";
 
 const Chat = () => {
-  // const navigate = useNavigate();
-
-  // const handleNavigate = ()=> {
-  //   navigate("/followers");
-  // };
-
   return (
     <div className="container">
       <div

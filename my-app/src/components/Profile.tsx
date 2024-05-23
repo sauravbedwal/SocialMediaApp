@@ -82,7 +82,10 @@ const Profile = () => {
           width: "255px",
         }}
       >
-        <Link to={"/notification"} style={{ textDecoration: "none" }}>
+        <Link
+          to={"/notification"}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
           <div
             style={{
               display: "flex",

@@ -139,7 +139,10 @@ const Followers = () => {
               ></div>
               {input.name === "Tom Cruise" ? (
                 <>
-                  <Link to={"/chat"} style={{ textDecoration: "none" }}>
+                  <Link
+                    to={"/chat"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
                     <div
                       style={{
                         margin: "0 0 0 5px",
