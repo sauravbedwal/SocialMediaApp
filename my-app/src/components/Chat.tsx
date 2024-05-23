@@ -26,13 +26,15 @@ const Chat = () => {
             </div>
           </div>
         </Link>
-        <div style={{ alignItems: "center" }}>
+        <Link to={"/profile"} style={{textDecoration:"none"}}>
+        <div  style={{ alignItems: "center" }}>
 
 
-          <div style={{ display: "flex", justifyContent: 'start' }}><FiberManualRecordIcon /><div>@tomcruise</div></div>
+          <div style={{ display: "flex", justifyContent: 'start' }}><FiberManualRecordIcon style={{color:"green"}}/><div>@tomcruise</div></div>
           <div style={{ fontSize: 'small' }}>Last active: 10 sec ago</div>
 
         </div>
+        </Link>
 
         <div className="chatMenubutton">
             <LocalPhoneOutlinedIcon style={{color:"#4dd969", background:"#e8fded", borderRadius:"50%", padding:"5px"}} />

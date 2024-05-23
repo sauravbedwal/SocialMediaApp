@@ -87,7 +87,7 @@ const Followers = () => {
           width: "300px",
         }}
       >
-        <div style={{ width: "14vw" }}>
+        <div>
           <Link to="/menu">
             <div className="followersButton-back">
               <div className="arrow-icon">
@@ -137,34 +137,71 @@ const Followers = () => {
                     : "followersMenuAvatarImage1"
                 }
               ></div>
-              <div
-                style={{
-                  margin: "0 0 0 5px",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "15px",
-                    fontWeight: 500,
-                    lineHeight: "22.5px",
-                    color: "#1D1D20",
-                  }}
-                >
-                  {input.name}
-                </div>
-                <div
-                  style={{
-                    fontSize: "12px",
-                    fontWeight: 400,
-                    lineHeight: "18px",
-                    color: "#919191",
-                  }}
-                >
-                  {input.username}
-                </div>
-              </div>
+              {input.name === "Tom Cruise" ? (
+                <>
+                  <Link to={"/chat"} style={{ textDecoration: "none" }}>
+                    <div
+                      style={{
+                        margin: "0 0 0 5px",
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <div
+                        style={{
+                          fontSize: "15px",
+                          fontWeight: 500,
+                          lineHeight: "22.5px",
+                          color: "#1D1D20",
+                        }}
+                      >
+                        {input.name}
+                      </div>
+                      <div
+                        style={{
+                          fontSize: "12px",
+                          fontWeight: 400,
+                          lineHeight: "18px",
+                          color: "#919191",
+                        }}
+                      >
+                        {input.username}
+                      </div>
+                    </div>
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <div
+                    style={{
+                      margin: "0 0 0 5px",
+                      display: "flex",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <div
+                      style={{
+                        fontSize: "15px",
+                        fontWeight: 500,
+                        lineHeight: "22.5px",
+                        color: "#1D1D20",
+                      }}
+                    >
+                      {input.name}
+                    </div>
+                    <div
+                      style={{
+                        fontSize: "12px",
+                        fontWeight: 400,
+                        lineHeight: "18px",
+                        color: "#919191",
+                      }}
+                    >
+                      {input.username}
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
             <div
               className={

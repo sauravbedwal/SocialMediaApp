@@ -40,28 +40,35 @@ const Notification = () => {
 
   return (
     <div className="container">
-      <div className="profileFollowersMenuProfile">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "300px",
+        }}
+      >
         <Link to="/profile">
-          <div className="notificationmenuAvatar">
-            <div className="menuAvatarImageBorder">
-              <div className="menuAvatarImage"></div>
-            </div>
+          <div
+            style={{
+              border: "1px solid green",
+              borderRadius: "50%",
+              padding: "2px",
+            }}
+          >
+            <div className="menuAvatarImage"></div>
           </div>
         </Link>
-
-        <div className="notificationProfileMenubutton">
-          <div className="profileMenubuttonBorder">
-            <SearchOutlinedIcon />
-          </div>
-        </div>
+        <SearchOutlinedIcon />
       </div>
       <div className="notificationProfileFollowersMenuName">
         <div
           style={{
-            fontSize: "20px",
+            fontSize: "16px",
             fontWeight: 600,
             lineHeight: "27px",
             color: "#1A1B23",
+            margin: "0 10px 0 0",
           }}
         >
           Notification
@@ -90,7 +97,7 @@ const Notification = () => {
       {notificationArray.map((input, index) => {
         return (
           <div id="notification-info">
-            <div className="followersMenuOptions">
+            <div className="notificationMenuOptions">
               <div style={{ display: "flex", alignItems: "center" }}>
                 <div
                   className={
@@ -116,6 +123,12 @@ const Notification = () => {
                 </div>
               </div>
             </div>
+            {index === 1 && (
+              <button className="notification-tick">
+                <DoneOutlinedIcon />
+                <div>Read</div>
+              </button>
+            )}
           </div>
         );
       })}
