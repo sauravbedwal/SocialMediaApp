@@ -246,7 +246,7 @@ text-decoration: underline;
 .menuProfile{
                 width: 300px;
                 height: 16vh;
-        border-bottom: 1px solid #EEEEEE;
+        /* border-bottom: 1px solid #EEEEEE; */
         /* margin: 25px 19px; */
         display: flex;
         justify-content: space-between;
@@ -922,25 +922,24 @@ background: #FFFFFF;
 
 
 .profileMenubuttonBorder {
-    width: 3vw;
-    height: 6vh;
+    /* width: 3vw;
+    height: 6vh; */
     /* border: 1px solid #EEEEEE; */
-    /* border-radius: 50%; */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     /* background: #E8FDED; */
     color: #585858;
 }
 
 .profileFollowersMenuProfile {
-    width: 24vw;
+    width: 300px;
     height: 16vh;
     /* border-bottom: 1px solid #EEEEEE; */
     /* margin: auto; */
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-around;
 }
 
 .profileFollowersMenuName > h1 {
@@ -1149,62 +1148,59 @@ margin-top: 20%;
 
 
 .notificationProfileMenubutton {
-    width: 6vw;
+    width: 40px;
     height: 6vh;
     /* border: 1px solid yellow; */
     margin-left: 200px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .notificationProfileFollowersMenuName {
     display: flex;
     align-items: center;
+    justify-content: "center";
 }
 
-.notificationProfileFollowersMenuName > h1 {
-    /* border: 1px solid black; */
-    /* margin-left: 250%; */
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 27px;
-    color: #1A1B23;
-        margin: 0px 20px 20px 20px;
-
-}
+/* .notificationProfileFollowersMenuName > h1 {
+    border: 1px solid black;
+ 
+} */
 
 .notificationmenuAvatar{
-    width: 4.1vw;
+    width: 40px;
     height: 9vh;
-    margin: 0 20px; 
+    /* margin: 0 20px;  */
 }
 
 .notificationMenuTotalBorder {
-    width: 1.6vw;
-    height: 3.5vh;
-    background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
-    box-shadow: 0px 5px 8px 0px #28CD5629;
-    border: 1px solid #28CD56;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -20px;
-    margin-left: -10px;
+    width: 23px;
+        height: 3.5vh;
+        background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
+        box-shadow: 0px 5px 8px 0px #28CD5629;
+        border: 1px solid #28CD56;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: -20px; */
+        /* margin-left: -90px; */
+        /* border: 1px solid yellow; */
 }
 
-.notificationMenuTotalBorder > p {
+/* .notificationMenuTotalBorder > p {
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
     color: white;
-}
+} */
 
 .notification-span{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 300px;
 }
 
 .notification-span > span {
@@ -1212,7 +1208,6 @@ margin-top: 20%;
         font-weight: 500;
         line-height: 18px;
         text-align: left;
-        padding: 30px;
 }
 
 

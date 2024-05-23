@@ -56,10 +56,26 @@ const Notification = () => {
         </div>
       </div>
       <div className="notificationProfileFollowersMenuName">
-        <h1>Notification</h1>
-        <div>
-          <div className="notificationMenuTotalBorder">
-            <p>35</p>
+        <div
+          style={{
+            fontSize: "20px",
+            fontWeight: 600,
+            lineHeight: "27px",
+            color: "#1A1B23",
+          }}
+        >
+          Notification
+        </div>
+        <div className="notificationMenuTotalBorder">
+          <div
+            style={{
+              fontSize: "12px",
+              fontWeight: 500,
+              lineHeight: "18px",
+              color: "white",
+            }}
+          >
+            35
           </div>
         </div>
       </div>
@@ -123,82 +139,7 @@ const Notification = () => {
           <DoneOutlinedIcon />
           <div>Read</div>
         </button>
-      </div>
-
-      <div id="notification-info">
-        <div className="followersMenuOptions">
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div className="followersMenuAvatar">
-              <div className="followersMenuAvatarImage"></div>
-            </div>
-            <div>
-              <span id="notification-name">Shah Rukh Khan</span>
-              <span id="notification-msg">Shared your post</span>
-              <p id="notification-time">52 min ago</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="notification-info">
-        <div className="followersMenuOptions">
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div className="followersMenuAvatar">
-              <div className="followersMenuAvatarImage"></div>
-            </div>
-            <div>
-              <span id="notification-name">Shah Rukh Khan</span>
-              <span id="notification-msg">Shared your post</span>
-              <p id="notification-time">52 min ago</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="notification-info">
-        <div className="followersMenuOptions">
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div className="followersMenuAvatar">
-              <div className="followersMenuAvatarImage"></div>
-            </div>
-            <div>
-              <span id="notification-name">Shah Rukh Khan</span>
-              <span id="notification-msg">Shared your post</span>
-              <p id="notification-time">52 min ago</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="notification-info">
-        <div className="followersMenuOptions">
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div className="followersMenuAvatar">
-              <div className="followersMenuAvatarImage"></div>
-            </div>
-            <div>
-              <span id="notification-name">Shah Rukh Khan</span>
-              <span id="notification-msg">Shared your post</span>
-              <p id="notification-time">52 min ago</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="notification-info">
-        <div className="followersMenuOptions">
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div className="followersMenuAvatar">
-              <div className="followersMenuAvatarImage"></div>
-            </div>
-            <div>
-              <span id="notification-name">Shah Rukh Khan</span>
-              <span id="notification-msg">Shared your post</span>
-              <p id="notification-time">52 min ago</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      </div>*/}
     </div>
   );
 };

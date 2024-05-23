@@ -523,7 +523,7 @@ border: 1px 0px 0px 0px; */
 
 
 
-.followersMenuTotalBorder {
+.followersMenubuttonBorder {
     width: 6vw;
     height: 5vh;
     background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
