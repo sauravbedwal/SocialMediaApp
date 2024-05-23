@@ -1,199 +1,179 @@
-import React from 'react'
-import "./style.css"
-import { Link } from "react-router-dom"
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import React from "react";
+import "./style.css";
+import { Link } from "react-router-dom";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const Followers = () => {
-    return (
-        <div className='container container-padding2'>
-            <div style={{ display: 'flex', alignItems: 'center', height: "85px", width:"300px" }}>
+  // const promise = new Promise((resolve, reject) => {
+  //   let foodAvailable = true;
 
-                <div style={{ width: "14vw" }}>
-                    <Link to="/menu">
-                        <div className="followersButton-back">
-                            <div className="arrow-icon">
-                                <ArrowBackIcon />
-                            </div>
-                        </div>
-                    </Link>
-                </div>
-                <div className="followersMenuProfile">
+  //   if (foodAvailable) {
+  //     resolve(foodAvailable);
+  //   } else {
+  //     const error = new Error("Error: 404 Something is Wrong!!!");
+  //     reject(error);
+  //   }
+  // });
 
-                    <div style={{ fontWeight: "bold", fontSize: "14px" }}>
-                        Followers(4K)
-                    </div>
-                </div>
+  // const promise = fetch("")
+  //   .then((response) => {
+  //     return response.json();
+  //   })
+  //   .then((data) => {
+  //     console.log(data);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   });
+
+  // async function getData() {
+  //   const data = await fetch(promise);
+  //   const json = await data.json();
+  // }
+
+  // getData();
+
+  const followersArray = [
+    {
+      name: "Shah Rukh Khan",
+      username: "@srk",
+      buttonText: "follow",
+    },
+    {
+      name: "Robert Downey Jr.",
+      username: "@rdj",
+      buttonText: "following",
+    },
+    {
+      name: "Tom Cruise",
+      username: "@tomcruise",
+      buttonText: "follow",
+    },
+    {
+      name: "Elezabeth",
+      username: "@elezabeth",
+      buttonText: "follow",
+    },
+    {
+      name: "Kate Winslet",
+      username: "@KateWinslet",
+      buttonText: "follow",
+    },
+    {
+      name: "Saoirse Hopper",
+      username: "@saoirsehop",
+      buttonText: "following",
+    },
+    {
+      name: "Melina Charlton",
+      username: "@melinacharlton",
+      buttonText: "following",
+    },
+  ];
+
+  return (
+    <div className="container container-padding2">
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          height: "85px",
+          width: "300px",
+        }}
+      >
+        <div style={{ width: "14vw" }}>
+          <Link to="/menu">
+            <div className="followersButton-back">
+              <div className="arrow-icon">
+                <ArrowBackIcon />
+              </div>
             </div>
+          </Link>
+        </div>
+        <div className="followersMenuProfile">
+          <div style={{ fontWeight: "bold", fontSize: "14px" }}>
+            Followers(4K)
+          </div>
+        </div>
+      </div>
 
-            <div className='menuSection'></div>
+      <div className="menuSection"></div>
 
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center', width: "300px", height: "100px" }}>
-                <div style={{ display: 'flex', justifyContent: "flex-start" }}>
-
-                    <div className='followersMenuAvatarImage'></div>
-                    <div style={{ margin: "0 0 0 5px", display: "flex", flexDirection: "column" }}>
-                        <div style={{ fontWeight: "bold" }}>Shah Rukh Khan</div>
-                        <div>@srk</div>
-                    </div>
+      {followersArray.map((input, index) => {
+        return (
+          <div
+            key={input.name}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              width: "300px",
+              height: "100px",
+            }}
+          >
+            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+              <div
+                className={
+                  index == 0
+                    ? "followersMenuAvatarImage1"
+                    : index == 1
+                    ? "followersMenuAvatarImage2"
+                    : index == 2
+                    ? "followersMenuAvatarImage3"
+                    : index == 3
+                    ? "followersMenuAvatarImage4"
+                    : index == 4
+                    ? "followersMenuAvatarImage5"
+                    : index == 5
+                    ? "followersMenuAvatarImage6"
+                    : index == 6
+                    ? "followersMenuAvatarImage7"
+                    : "followersMenuAvatarImage1"
+                }
+              ></div>
+              <div
+                style={{
+                  margin: "0 0 0 5px",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: 500,
+                    lineHeight: "22.5px",
+                    color: "#1D1D20",
+                  }}
+                >
+                  {input.name}
                 </div>
-                <div className='followersMenuTotalBorder'>
-                    <p>Follow</p>
+                <div
+                  style={{
+                    fontSize: "12px",
+                    fontWeight: 400,
+                    lineHeight: "18px",
+                    color: "#919191",
+                  }}
+                >
+                  {input.username}
                 </div>
+              </div>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center', width: "300px" }}>
-                <div style={{ display: 'flex', justifyContent: "flex-start" }}>
-
-                    <div className='followersMenuAvatarImage'></div>
-                    <div style={{ margin: "0 0 0 5px", display: "flex", flexDirection: "column" }}>
-                        <div style={{ fontWeight: "bold" }}>Robert Downey Jr.</div>
-                        <div>@rdj</div>
-                    </div>
-                </div>
-                <div className='followersMenuTotalBorder'>
-                    <p >Follow</p>
-                </div>
+            <div
+              className={
+                input.buttonText === "follow"
+                  ? "followersMenuTotalBorder"
+                  : "followersMenubuttonBorder"
+              }
+            >
+              <p>{input.buttonText}</p>
             </div>
-            <Link to="/chat" style={{ textDecoration: "none" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center', width: "300px", height: "100px" }}>
-                    <div style={{ display: 'flex', justifyContent: "flex-start" }}>
-
-                        <div className='followersMenuAvatarImage'></div>
-                        <div style={{ margin: "0 0 0 5px", display: "flex", flexDirection: "column" }}>
-                            <div style={{ fontWeight: "bold" }}>Tom Cruise</div>
-                            <div>@tomcruise</div>
-                        </div>
-                    </div>
-                    <div className='followersMenuTotalBorder'>
-                    <p>Follow</p>
-                </div>
-                </div>
-            </Link>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center', width: "300px", height: "100px" }}>
-                <div style={{ display: 'flex', justifyContent: "flex-start" }}>
-
-                    <div className='followersMenuAvatarImage'></div>
-                    <div style={{ margin: "0 0 0 5px", display: "flex", flexDirection: "column" }}>
-                        <div style={{ fontWeight: "bold" }}>Elezabeth</div>
-                        <div>@elezabeth</div>
-                    </div>
-                </div>
-                <div className='followersMenuTotalBorder'>
-                    <p>Follow</p>
-                </div>
-            </div>
-
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center', width: "300px", height: "100px" }}>
-                <div style={{ display: 'flex', justifyContent: "flex-start" }}>
-
-                    <div className='followersMenuAvatarImage'></div>
-                    <div style={{ margin: "0 0 0 5px", display: "flex", flexDirection: "column" }}>
-                        <div style={{ fontWeight: "bold" }}>Shah Rukh Khan</div>
-                        <div>@srk</div>
-                    </div>
-                </div>
-                <div className='followersMenuTotalBorder'>
-                    <p>Follow</p>
-                </div>
-            </div><div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center', width: "300px", height: "100px" }}>
-                <div style={{ display: 'flex', justifyContent: "flex-start" }}>
-
-                    <div className='followersMenuAvatarImage'></div>
-                    <div style={{ margin: "0 0 0 5px", display: "flex", flexDirection: "column" }}>
-                        <div style={{ fontWeight: "bold" }}>Shah Rukh Khan</div>
-                        <div>@srk</div>
-                    </div>
-                </div>
-                <div className='followersMenuTotalBorder'>
-                    <p>Follow</p>
-                </div>
-            </div>
-
-            {/* <div>
-        <div>
-            <span>Image</span>
-            <span>
-                <h1>Shah Rukh Khan</h1>
-                <p>@srk</p>
-            </span>
-            <span>
-                <button>follow</button>
-            </span>
-        </div>
-
-        <div>
-            <span>Image</span>
-            <span>
-                <h1>Robert Downey Jr.</h1>
-                <p>@rdj</p>
-            </span>
-            <span>
-                <button>following</button>
-            </span>
-        </div>
-
-        <div>
-            <span>Image</span>
-            <span>
-                <h1>Tom Cruise</h1>
-                <p>@tomcruise</p>
-            </span>
-            <span>
-                <button>follow</button>
-            </span>
-        </div>
-
-        <div>
-            <span>Image</span>
-            <span>
-                <h1>Elezabeth</h1>
-                <p>@elezabeth</p>
-            </span>
-            <span>
-                <button>follow</button>
-            </span>
-        </div>
-
-        <div>
-            <span>Image</span>
-            <span>
-                <h1>Kate Winslet</h1>
-                <p>@KateWinslet</p>
-            </span>
-            <span>
-                <button>follow</button>
-            </span>
-        </div>
-
-        <div>
-            <span>Image</span>
-            <span>
-                <h1>Saoirse Hopper</h1>
-                <p>@saoirsehop</p>
-            </span>
-            <span>
-                <button>following</button>
-            </span>
-        </div>
-
-        <div>
-            <span>Image</span>
-            <span>
-                <h1>Melina Charlton</h1>
-                <p>@melinacharlton</p>
-            </span>
-            <span>
-                <button>following</button>
-            </span>
-        </div>
-
-        </div> */}
-
-
-
-
-
-        </div>
-    )
-}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 export default Followers;

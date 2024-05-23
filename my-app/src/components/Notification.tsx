@@ -5,44 +5,38 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
 
 const Notification = () => {
-  // const notificationArray = [
-  //   {
-  //     name: "Aarush Galloway",
-  //     noti: "Shared your post",
-  //     time: "52 min ago",
-  //     url: "F:Coding PROJECTTech Ocenaic Technologies ProjectSocialMediaAppmy-appsrcimages\notificationImageAvatar1.png",
-  //   },
-  //   {
-  //     name: "Arthur Aguilar",
-  //     noti: "Liked your photo",
-  //     time: "2 h ago",
-  //     url: "F:Coding PROJECTTech Ocenaic Technologies ProjectSocialMediaAppmy-appsrcimages\notificationImageAvatar2.png",
-  //   },
-  //   {
-  //     name: "Addie Barrera",
-  //     noti: "Commented on your post",
-  //     time: "3 h ago",
-  //     url: "F:Coding PROJECTTech Ocenaic Technologies ProjectSocialMediaAppmy-appsrcimages\notificationImageAvatar3.png",
-  //   },
-  //   {
-  //     name: "Anne Southern",
-  //     noti: "added photo in group Awesome UI Kit",
-  //     time: "4 h ago",
-  //     url: "F:Coding PROJECTTech Ocenaic Technologies ProjectSocialMediaAppmy-appsrcimages\notificationImageAvatar4.png",
-  //   },
-  //   {
-  //     name: "Brenden Ramirez",
-  //     noti: "Liked your post",
-  //     time: "5 h ago",
-  //     url: "F:Coding PROJECTTech Ocenaic Technologies ProjectSocialMediaAppmy-appsrcimages\notificationImageAvatar5.png",
-  //   },
-  //   {
-  //     name: "Braxx Stott",
-  //     noti: "Liked your comments",
-  //     time: "6 h ago",
-  //     url: "F:Coding PROJECTTech Ocenaic Technologies ProjectSocialMediaAppmy-appsrcimages\notificationImageAvatar6.png",
-  //   },
-  // ];
+  const notificationArray = [
+    {
+      name: "Aarush Galloway",
+      noti: "Shared your post",
+      time: "52 min ago",
+    },
+    {
+      name: "Arthur Aguilar",
+      noti: "Liked your photo",
+      time: "2 h ago",
+    },
+    {
+      name: "Addie Barrera",
+      noti: "Commented on your post",
+      time: "3 h ago",
+    },
+    {
+      name: "Anne Southern",
+      noti: "added photo in group Awesome UI Kit",
+      time: "4 h ago",
+    },
+    {
+      name: "Brenden Ramirez",
+      noti: "Liked your post",
+      time: "5 h ago",
+    },
+    {
+      name: "Braxx Stott",
+      noti: "Liked your comments",
+      time: "6 h ago",
+    },
+  ];
 
   return (
     <div className="container">
@@ -77,22 +71,40 @@ const Notification = () => {
         <span style={{ color: "#8B8B8B" }}>Mark all us read</span>
       </div>
 
-      <div id="notification-info">
-        <div className="followersMenuOptions">
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div className="followersMenuAvatar">
-              <div className="followersMenuAvatarImage"></div>
-            </div>
-            <div>
-              <span id="notification-name">Shah Rukh Khan</span>
-              <span id="notification-msg">Shared your post</span>
-              <p id="notification-time">52 min ago</p>
+      {notificationArray.map((input, index) => {
+        return (
+          <div id="notification-info">
+            <div className="followersMenuOptions">
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <div
+                  className={
+                    index == 0
+                      ? "notificationFollowersMenuAvatarImage1"
+                      : index == 1
+                      ? "notificationFollowersMenuAvatarImage2"
+                      : index == 2
+                      ? "notificationFollowersMenuAvatarImage3"
+                      : index == 3
+                      ? "notificationFollowersMenuAvatarImage4"
+                      : index == 4
+                      ? "notificationFollowersMenuAvatarImage5"
+                      : index == 5
+                      ? "notificationFollowersMenuAvatarImage6"
+                      : "notificationFollowersMenuAvatarImage1"
+                  }
+                ></div>
+                <div style={{ marginLeft: "10px" }}>
+                  <span id="notification-name">{input.name}</span>
+                  <span id="notification-msg">{input.noti}</span>
+                  <div id="notification-time">{input.time}</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        );
+      })}
 
-      <div className="notification-read">
+      {/* <div className="notification-read">
         <div id="notification-info">
           <div className="notificationFollowersMenuOptions">
             <div style={{ display: "flex", alignItems: "center" }}>
@@ -186,7 +198,7 @@ const Notification = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
