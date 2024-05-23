@@ -31,7 +31,6 @@ width: 388.29px;
     left: -11.64px;
     gap: 0px;
     border: 1px 0px 0px 0px;
-    opacity: 0px;
     border: 1px solid;
     border-image-source: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
 } */
@@ -40,10 +39,7 @@ width: 388.29px;
     width: 317px;
     height: 112px;
     margin: auto;
-    /* top: 469px; */
-    /* left: 29px; */
     gap: 0px;
-    opacity: 0px;
 }
 
 .onboarding-heading > h1 {
@@ -62,7 +58,6 @@ width: 388.29px;
         top: 591px;
         left: 42px;
         gap: 0px;
-        opacity: 0px;
         margin: auto;
 }
 
@@ -88,7 +83,6 @@ padding: 0;
     top: 716px;
     left: 25px;
     gap: 0px;
-    opacity: 0px;
     border: 0;
     border-radius: 10px;
     color: #FFFFFF;
@@ -107,7 +101,6 @@ padding: 0;
     /* top: 26px;
     left: 25px; */
     gap: 0px;
-    opacity: 0px;
     border-radius: 8px;
     background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
     box-shadow: 0px 4px 14px 0px #28CD5630;
@@ -126,7 +119,6 @@ height: 20px;
 left: 39px; */
 gap: 0px;
 border: 2px 0px 0px 0px;
-opacity: 0px;
 color: #FFFFFF;
 }
 
@@ -165,7 +157,6 @@ color: #FFFFFF;
     display: flex;
     height: 193px;
     gap: 0px;
-    opacity: 0px;
     justify-content: center;
     flex-direction: column;
 }
@@ -176,7 +167,6 @@ height: 18vh;
 /* top: 230px;
 left: 25px; */
 gap: 0px;
-opacity: 0px;
 border: 1px solid #4DD969;
 border-radius: 8px;
 padding-left: 10px;
@@ -192,7 +182,6 @@ left: 25px;
 gap: 0px;
 border: 1px 0px 0px 0px; */
 border-radius: 8px;
-opacity: 0px;
 padding-left: 10px;
     border: 1px solid #EEEEEE;
 }
@@ -233,7 +222,6 @@ padding-left: 10px;
             /* top: 716px;
             left: 25px;
             gap: 0px; */
-            opacity: 0px;
             border: 0;
             border-radius: 5px;
             color: black;
@@ -295,7 +283,6 @@ height: 9vh;
     width: ;
         height: 24px;
         gap: 0px;
-        opacity: 0px;
         border: 1px solid black;
 } */
 
@@ -454,7 +441,6 @@ line-height: 18px;
     background-color: #C9FFD5;
     width:100%;
     height: 58px;
-    opacity: 0px;
     border: 0;
     border-radius: 5px;
     color: black;
@@ -503,7 +489,6 @@ border: 1px solid #28CD56;
     width: 25px;
     height: 25px;
     gap: 0px;
-    opacity: 0px;
     border-radius: 8px;
     background: linear-gradient(180deg, #4DD969 0%, #28CD56 100%);
     box-shadow: 0px 4px 14px 0px #28CD5630;
@@ -594,7 +579,6 @@ border: 1px solid #28CD56;
     width: 14px;
         height: 14px;
         border: 1px 0px 0px 0px;
-        opacity: 0px;
         color: #0F9804;
 
 }
