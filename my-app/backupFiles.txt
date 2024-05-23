@@ -2383,3 +2383,54 @@ export default SignIn;
 
 //file:///C:/Users/saurav%20sharma/Downloads/Task%20frontend%20developer.pdf
 // https://www.figma.com/design/wHXneI09mGwFGwAfC3NAeC/Social-Media-App?node-id=1-22&t=UhsgamRWsEkYeND2-0
+
+
+
+---------------------------------------------------
+
+//sign in page
+
+.p-signIn {
+    color: #DDDDDD;
+    /* margin: 0; */
+    margin: 5px 0px;
+}
+
+.white-btn {
+    color: #231D25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 325px;
+    height: 58px;
+    opacity: 0px;
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    /* margin: auto; */
+    margin: 5px 10px;
+    border: 1px solid #EEEEEE;
+}
+
+
+// menu
+
+
+.menuAvatarImageBorder {
+    width: 57px;
+    height: 60px;
+    border: 2px solid #28CD56;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
