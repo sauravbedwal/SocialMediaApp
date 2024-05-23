@@ -29,7 +29,9 @@ const Profile = () => {
 
         <div className="profileMenubutton">
           <FavoriteBorderOutlinedIcon style={{ color: "#585858" }} />
-          <SearchOutlinedIcon style={{ color: "#585858" ,margin:"0 0 0 5px"}} />
+          <SearchOutlinedIcon
+            style={{ color: "#585858", margin: "0 0 0 5px" }}
+          />
         </div>
       </div>
 
@@ -38,7 +40,7 @@ const Profile = () => {
         style={{
           display: "flex",
           justifyContent: "space-evenly",
-          height:"30vh",
+          height: "30vh",
           flexDirection: "column",
         }}
       >
@@ -80,23 +82,24 @@ const Profile = () => {
           width: "255px",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            width: "120px",
-            height:"26px",
-            border:"1px solid #EEEEEEE",
-            borderRadius:"20px",
-            boxShadow:"0px 5px 8px 0px #eeeeeeec"
-          }}
-        >
-          <FiberManualRecordIcon style={{ color: "green" }} />
-          <SmsOutlinedIcon />
-          <div>Message</div>
-
-        </div>
+        <Link to={"/notification"} style={{ textDecoration: "none" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              alignItems: "center",
+              width: "120px",
+              height: "26px",
+              border: "1px solid #EEEEEEE",
+              borderRadius: "20px",
+              boxShadow: "0px 5px 8px 0px #eeeeeeec",
+            }}
+          >
+            <FiberManualRecordIcon style={{ color: "green" }} />
+            <SmsOutlinedIcon />
+            <div>Message</div>
+          </div>
+        </Link>
         <div className="profileFollowersMenuTotalBorder">
           <p>Follow</p>
         </div>
@@ -193,7 +196,13 @@ const Profile = () => {
 
       <div className="menuSection"></div>
 
-      <div style={{display:'flex', justifyContent:'space-evenly', width:"300px"}}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          width: "300px",
+        }}
+      >
         <div className="profileGroupMenuAvatarImage2"></div>
         <Link to="/followers" style={{ textDecoration: "none" }}>
           <div className="profileGroupMenuAvatarImage2"></div>

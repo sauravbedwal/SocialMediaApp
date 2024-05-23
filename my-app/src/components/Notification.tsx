@@ -103,15 +103,15 @@ const Notification = () => {
                   className={
                     index == 0
                       ? "notificationFollowersMenuAvatarImage1"
-                      : index == 1
+                      : index === 1
                       ? "notificationFollowersMenuAvatarImage2"
-                      : index == 2
+                      : index === 2
                       ? "notificationFollowersMenuAvatarImage3"
-                      : index == 3
+                      : index === 3
                       ? "notificationFollowersMenuAvatarImage4"
-                      : index == 4
+                      : index === 4
                       ? "notificationFollowersMenuAvatarImage5"
-                      : index == 5
+                      : index === 5
                       ? "notificationFollowersMenuAvatarImage6"
                       : "notificationFollowersMenuAvatarImage1"
                   }
@@ -132,27 +132,6 @@ const Notification = () => {
           </div>
         );
       })}
-
-      {/* <div className="notification-read">
-        <div id="notification-info">
-          <div className="notificationFollowersMenuOptions">
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <div className="followersMenuAvatar">
-                <div className="followersMenuAvatarImage"></div>
-              </div>
-              <div>
-                <span id="notification-name">Shah Rukh Khan</span>
-                <span id="notification-msg">Shared your post</span>
-                <p id="notification-time">52 min ago</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button className="notification-tick">
-          <DoneOutlinedIcon />
-          <div>Read</div>
-        </button>
-      </div>*/}
     </div>
   );
 };
