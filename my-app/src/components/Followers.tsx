@@ -3,6 +3,12 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
+interface Follower {
+  name: string;
+  username: string;
+  buttonText: string;
+}
+
 const Followers = () => {
   // const promise = new Promise((resolve, reject) => {
   //   let foodAvailable = true;
@@ -33,7 +39,7 @@ const Followers = () => {
 
   // getData();
 
-  const followersArray = [
+  const followersArray: Follower[] = [
     {
       name: "Shah Rukh Khan",
       username: "@srk",
@@ -99,7 +105,7 @@ const Followers = () => {
 
       <div className="menuSection"></div>
 
-      {followersArray.map((input, index) => {
+      {followersArray.map((input: Follower, index: number) => {
         return (
           <div
             key={input.name}
@@ -114,19 +120,19 @@ const Followers = () => {
             <div style={{ display: "flex", justifyContent: "flex-start" }}>
               <div
                 className={
-                  index == 0
+                  index === 0
                     ? "followersMenuAvatarImage1"
-                    : index == 1
+                    : index === 1
                     ? "followersMenuAvatarImage2"
-                    : index == 2
+                    : index === 2
                     ? "followersMenuAvatarImage3"
-                    : index == 3
+                    : index === 3
                     ? "followersMenuAvatarImage4"
-                    : index == 4
+                    : index === 4
                     ? "followersMenuAvatarImage5"
-                    : index == 5
+                    : index === 5
                     ? "followersMenuAvatarImage6"
-                    : index == 6
+                    : index === 6
                     ? "followersMenuAvatarImage7"
                     : "followersMenuAvatarImage1"
                 }
