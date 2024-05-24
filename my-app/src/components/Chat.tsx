@@ -31,7 +31,7 @@ const Chat = () => {
         >
           <div style={{ alignItems: "center" }}>
             <div style={{ display: "flex", justifyContent: "start" }}>
-              <FiberManualRecordIcon style={{ color: "green" }} />
+              <FiberManualRecordIcon style={{ color: "#0f9804" }} />
               <div>@tomcruise</div>
             </div>
             <div style={{ fontSize: "small" }}>Last active: 10 sec ago</div>

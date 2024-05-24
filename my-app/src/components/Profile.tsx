@@ -98,7 +98,7 @@ const Profile = () => {
               boxShadow: "0px 5px 8px 0px #eeeeeeec",
             }}
           >
-            <FiberManualRecordIcon style={{ color: "green" }} />
+            <FiberManualRecordIcon style={{ color: "#0f9804" }} />
             <SmsOutlinedIcon />
             <div>Message</div>
           </div>

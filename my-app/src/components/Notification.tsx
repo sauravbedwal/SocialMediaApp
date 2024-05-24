@@ -1,42 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
+import { Notifications } from "../constants/type";
+import { notificationArray } from "../constants/Constant";
 
 const Notification = () => {
-  const notificationArray = [
-    {
-      name: "Aarush Galloway",
-      noti: "Shared your post",
-      time: "52 min ago",
-    },
-    {
-      name: "Arthur Aguilar",
-      noti: "Liked your photo",
-      time: "2 h ago",
-    },
-    {
-      name: "Addie Barrera",
-      noti: "Commented on your post",
-      time: "3 h ago",
-    },
-    {
-      name: "Anne Southern",
-      noti: "added photo in group Awesome UI Kit",
-      time: "4 h ago",
-    },
-    {
-      name: "Brenden Ramirez",
-      noti: "Liked your post",
-      time: "5 h ago",
-    },
-    {
-      name: "Braxx Stott",
-      noti: "Liked your comments",
-      time: "6 h ago",
-    },
-  ];
+  const [info, setInfo] = useState<Notifications[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setInfo(notificationArray);
+      } catch (error) {
+        console.log("error");
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="container">
@@ -94,9 +76,9 @@ const Notification = () => {
         <span style={{ color: "#8B8B8B" }}>Mark all us read</span>
       </div>
 
-      {notificationArray.map((input, index) => {
+      {info.map((input: Notifications, index: number) => {
         return (
-          <div id="notification-info">
+          <div id="notification-info" key={input.name}>
             <div className="notificationMenuOptions">
               <div style={{ display: "flex", alignItems: "center" }}>
                 <div

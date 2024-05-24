@@ -52,10 +52,10 @@ const SignIn = () => {
           <Button title={"Sign in"} />
         </Link>
       </div>
-      <p className="p-signIn">
-        ---------------------- <p className="para-signIn"> Or with </p>{" "}
+      <div className="p-signIn">
+        ---------------------- <div className="para-signIn"> Or with </div>
         ----------------------
-      </p>
+      </div>
 
       <div className="secondary-btn">
         <button className="white-btn">

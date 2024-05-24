@@ -7,11 +7,16 @@ const Menu = () => {
   return (
     <div className="container">
       <div className="menuProfile">
-        <div className="menuAvatar">
-          <div className="menuAvatarImageBorder">
-            <div className="menuAvatarImage"></div>
+        <Link
+          to={"/signIn"}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="menuAvatar">
+            <div className="menuAvatarImageBorder">
+              <div className="menuAvatarImage"></div>
+            </div>
           </div>
-        </div>
+        </Link>
         <div className="menuName">
           <h1>Morsalin Nur</h1>
           <p>@morsalin.nur</p>

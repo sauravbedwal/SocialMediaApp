@@ -1,81 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-
-interface Follower {
-  name: string;
-  username: string;
-  buttonText: string;
-}
+import { followersArray } from "../constants/Constant";
+import { Follower } from "../constants/type";
 
 const Followers = () => {
-  // const promise = new Promise((resolve, reject) => {
-  //   let foodAvailable = true;
+  const [data, setData] = useState<Follower[]>([]);
 
-  //   if (foodAvailable) {
-  //     resolve(foodAvailable);
-  //   } else {
-  //     const error = new Error("Error: 404 Something is Wrong!!!");
-  //     reject(error);
-  //   }
-  // });
-
-  // const promise = fetch("")
-  //   .then((response) => {
-  //     return response.json();
-  //   })
-  //   .then((data) => {
-  //     console.log(data);
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   });
-
-  // async function getData() {
-  //   const data = await fetch(promise);
-  //   const json = await data.json();
-  // }
-
-  // getData();
-
-  const followersArray: Follower[] = [
-    {
-      name: "Shah Rukh Khan",
-      username: "@srk",
-      buttonText: "follow",
-    },
-    {
-      name: "Robert Downey Jr.",
-      username: "@rdj",
-      buttonText: "following",
-    },
-    {
-      name: "Tom Cruise",
-      username: "@tomcruise",
-      buttonText: "follow",
-    },
-    {
-      name: "Elezabeth",
-      username: "@elezabeth",
-      buttonText: "follow",
-    },
-    {
-      name: "Kate Winslet",
-      username: "@KateWinslet",
-      buttonText: "follow",
-    },
-    {
-      name: "Saoirse Hopper",
-      username: "@saoirsehop",
-      buttonText: "following",
-    },
-    {
-      name: "Melina Charlton",
-      username: "@melinacharlton",
-      buttonText: "following",
-    },
-  ];
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setData(followersArray);
+      } catch {
+        console.log("error");
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="container container-padding2">
@@ -105,7 +47,7 @@ const Followers = () => {
 
       <div className="menuSection"></div>
 
-      {followersArray.map((input: Follower, index: number) => {
+      {data.map((input: Follower, index: number) => {
         return (
           <div
             key={input.name}
